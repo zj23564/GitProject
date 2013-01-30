@@ -1,0 +1,259 @@
+The NET_Module compilation time: Nov 19 2012, 20:31:50
+file: f:\code\net_engine\ht_netmodule.cpp, line: 61, Setting does not print the log to the console!
+file: f:\code\net_engine\ht_netmodule.cpp, line: 38, reactor_event_loop thredid:(10656) start!
+file: f:\code\net_engine\ht_netmodule.cpp, line: 38, reactor_event_loop thredid:(10448) start!
+file: f:\code\net_engine\ht_tcpclient.cpp line: 28, connecting ok! 
+file: f:\code\net_engine\ht_sockhandler.cpp, line: 61, SockHandler point: 01BBDF28, new SockHandler!
+file: f:\code\net_engine\ht_sockhandler.cpp, line: 504, ip: 192.168.1.81:4500, this: 01BBDF28, update reactor handler enableReading success
+file: f:\code\net_engine\ht_sockhandler.cpp, line: 104, ip: 192.168.1.81:4500, this: 01BBDF28, putq size = 32, state = 2!
+file: f:\code\net_engine\ht_sockhandler.cpp, line: 491, ip: 192.168.1.81:4500, this: 01BBDF28, update reactor handler success to writing
+file: f:\code\net_engine\ht_sockhandler.cpp, line: 319, ip: 192.168.1.81:4500, this: 01BBDF28, handle output!
+file: f:\code\net_engine\ht_sockhandler.cpp, line: 148, ip: 192.168.1.81:4500, this: 01BBDF28, output_queue_ enqueue_tail success, size: 36!
+file: f:\code\net_engine\ht_sockhandler.cpp, line: 104, ip: 192.168.1.81:4500, this: 01BBDF28, putq size = 32, state = 2!
+file: f:\code\net_engine\ht_sockhandler.cpp, line: 148, ip: 192.168.1.81:4500, this: 01BBDF28, output_queue_ enqueue_tail success, size: 72!
+file: f:\code\net_engine\ht_sockhandler.cpp, line: 357, ip: 192.168.1.81:4500, this: 01BBDF28, send data to peer!, m_SendSize: 36
+file: f:\code\net_engine\ht_sockhandler.cpp, line: 357, ip: 192.168.1.81:4500, this: 01BBDF28, send data to peer!, m_SendSize: 36
+file: f:\code\net_engine\ht_sockhandler.cpp, line: 516, ip: 192.168.1.81:4500, this: 01BBDF28, update reactor handler success to disablewriting
+file: f:\code\net_engine\ht_sockhandler.cpp, line: 341, ip: 192.168.1.81:4500, this: 01BBDF28, queue is empty!
+file: f:\code\net_engine\ht_sockhandler.cpp, line: 232, ip: 192.168.1.81:4500, ispacket: 1, this: 01BBDF28,handle input!
+file: f:\code\net_engine\ht_sockhandler.cpp, line: 285, ip: 192.168.1.81:4500, this: 01BBDF28, call readCallback_ ,packlen = 312
+file: f:\code\net_engine\ht_sockhandler.cpp, line: 285, ip: 192.168.1.81:4500, this: 01BBDF28, call readCallback_ ,packlen = 4972
+file: f:\code\net_engine\ht_sockhandler.cpp, line: 310, ip: 192.168.1.81:4500, this: 01BBDF28, recv data nRecvLen = 5292
+file: f:\code\net_engine\ht_sockhandler.cpp, line: 104, ip: 192.168.1.81:4500, this: 01BBDF28, putq size = 68, state = 2!
+file: f:\code\net_engine\ht_sockhandler.cpp, line: 491, ip: 192.168.1.81:4500, this: 01BBDF28, update reactor handler success to writing
+file: f:\code\net_engine\ht_sockhandler.cpp, line: 148, ip: 192.168.1.81:4500, this: 01BBDF28, output_queue_ enqueue_tail success, size: 72!
+file: f:\code\net_engine\ht_sockhandler.cpp, line: 319, ip: 192.168.1.81:4500, this: 01BBDF28, handle output!
+file: f:\code\net_engine\ht_sockhandler.cpp, line: 357, ip: 192.168.1.81:4500, this: 01BBDF28, send data to peer!, m_SendSize: 72
+file: f:\code\net_engine\ht_sockhandler.cpp, line: 516, ip: 192.168.1.81:4500, this: 01BBDF28, update reactor handler success to disablewriting
+file: f:\code\net_engine\ht_sockhandler.cpp, line: 341, ip: 192.168.1.81:4500, this: 01BBDF28, queue is empty!
+file: f:\code\net_engine\ht_sockhandler.cpp, line: 232, ip: 192.168.1.81:4500, ispacket: 1, this: 01BBDF28,handle input!
+file: f:\code\net_engine\ht_sockhandler.cpp, line: 296, ip: 192.168.1.81:4500, this: 01BBDF28, recv data len <  packlen= 357484, 
+file: f:\code\net_engine\ht_sockhandler.cpp, line: 310, ip: 192.168.1.81:4500, this: 01BBDF28, recv data nRecvLen = 4380
+file: f:\code\net_engine\ht_sockhandler.cpp, line: 232, ip: 192.168.1.81:4500, ispacket: 1, this: 01BBDF28,handle input!
+file: f:\code\net_engine\ht_sockhandler.cpp, line: 296, ip: 192.168.1.81:4500, this: 01BBDF28, recv data len <  packlen= 357484, 
+file: f:\code\net_engine\ht_sockhandler.cpp, line: 310, ip: 192.168.1.81:4500, this: 01BBDF28, recv data nRecvLen = 4380
+file: f:\code\net_engine\ht_sockhandler.cpp, line: 232, ip: 192.168.1.81:4500, ispacket: 1, this: 01BBDF28,handle input!
+file: f:\code\net_engine\ht_sockhandler.cpp, line: 296, ip: 192.168.1.81:4500, this: 01BBDF28, recv data len <  packlen= 357484, 
+file: f:\code\net_engine\ht_sockhandler.cpp, line: 310, ip: 192.168.1.81:4500, this: 01BBDF28, recv data nRecvLen = 4380
+file: f:\code\net_engine\ht_sockhandler.cpp, line: 232, ip: 192.168.1.81:4500, ispacket: 1, this: 01BBDF28,handle input!
+file: f:\code\net_engine\ht_sockhandler.cpp, line: 296, ip: 192.168.1.81:4500, this: 01BBDF28, recv data len <  packlen= 357484, 
+file: f:\code\net_engine\ht_sockhandler.cpp, line: 310, ip: 192.168.1.81:4500, this: 01BBDF28, recv data nRecvLen = 4380
+file: f:\code\net_engine\ht_sockhandler.cpp, line: 232, ip: 192.168.1.81:4500, ispacket: 1, this: 01BBDF28,handle input!
+file: f:\code\net_engine\ht_sockhandler.cpp, line: 296, ip: 192.168.1.81:4500, this: 01BBDF28, recv data len <  packlen= 357484, 
+file: f:\code\net_engine\ht_sockhandler.cpp, line: 310, ip: 192.168.1.81:4500, this: 01BBDF28, recv data nRecvLen = 4380
+file: f:\code\net_engine\ht_sockhandler.cpp, line: 232, ip: 192.168.1.81:4500, ispacket: 1, this: 01BBDF28,handle input!
+file: f:\code\net_engine\ht_sockhandler.cpp, line: 296, ip: 192.168.1.81:4500, this: 01BBDF28, recv data len <  packlen= 357484, 
+file: f:\code\net_engine\ht_sockhandler.cpp, line: 310, ip: 192.168.1.81:4500, this: 01BBDF28, recv data nRecvLen = 4380
+file: f:\code\net_engine\ht_sockhandler.cpp, line: 232, ip: 192.168.1.81:4500, ispacket: 1, this: 01BBDF28,handle input!
+file: f:\code\net_engine\ht_sockhandler.cpp, line: 296, ip: 192.168.1.81:4500, this: 01BBDF28, recv data len <  packlen= 357484, 
+file: f:\code\net_engine\ht_sockhandler.cpp, line: 310, ip: 192.168.1.81:4500, this: 01BBDF28, recv data nRecvLen = 2920
+file: f:\code\net_engine\ht_sockhandler.cpp, line: 232, ip: 192.168.1.81:4500, ispacket: 1, this: 01BBDF28,handle input!
+file: f:\code\net_engine\ht_sockhandler.cpp, line: 296, ip: 192.168.1.81:4500, this: 01BBDF28, recv data len <  packlen= 357484, 
+file: f:\code\net_engine\ht_sockhandler.cpp, line: 310, ip: 192.168.1.81:4500, this: 01BBDF28, recv data nRecvLen = 4380
+file: f:\code\net_engine\ht_sockhandler.cpp, line: 232, ip: 192.168.1.81:4500, ispacket: 1, this: 01BBDF28,handle input!
+file: f:\code\net_engine\ht_sockhandler.cpp, line: 296, ip: 192.168.1.81:4500, this: 01BBDF28, recv data len <  packlen= 357484, 
+file: f:\code\net_engine\ht_sockhandler.cpp, line: 310, ip: 192.168.1.81:4500, this: 01BBDF28, recv data nRecvLen = 4380
+file: f:\code\net_engine\ht_sockhandler.cpp, line: 232, ip: 192.168.1.81:4500, ispacket: 1, this: 01BBDF28,handle input!
+file: f:\code\net_engine\ht_sockhandler.cpp, line: 296, ip: 192.168.1.81:4500, this: 01BBDF28, recv data len <  packlen= 357484, 
+file: f:\code\net_engine\ht_sockhandler.cpp, line: 310, ip: 192.168.1.81:4500, this: 01BBDF28, recv data nRecvLen = 4380
+file: f:\code\net_engine\ht_sockhandler.cpp, line: 232, ip: 192.168.1.81:4500, ispacket: 1, this: 01BBDF28,handle input!
+file: f:\code\net_engine\ht_sockhandler.cpp, line: 296, ip: 192.168.1.81:4500, this: 01BBDF28, recv data len <  packlen= 357484, 
+file: f:\code\net_engine\ht_sockhandler.cpp, line: 310, ip: 192.168.1.81:4500, this: 01BBDF28, recv data nRecvLen = 4380
+file: f:\code\net_engine\ht_sockhandler.cpp, line: 232, ip: 192.168.1.81:4500, ispacket: 1, this: 01BBDF28,handle input!
+file: f:\code\net_engine\ht_sockhandler.cpp, line: 296, ip: 192.168.1.81:4500, this: 01BBDF28, recv data len <  packlen= 357484, 
+file: f:\code\net_engine\ht_sockhandler.cpp, line: 310, ip: 192.168.1.81:4500, this: 01BBDF28, recv data nRecvLen = 1460
+file: f:\code\net_engine\ht_sockhandler.cpp, line: 232, ip: 192.168.1.81:4500, ispacket: 1, this: 01BBDF28,handle input!
+file: f:\code\net_engine\ht_sockhandler.cpp, line: 296, ip: 192.168.1.81:4500, this: 01BBDF28, recv data len <  packlen= 357484, 
+file: f:\code\net_engine\ht_sockhandler.cpp, line: 310, ip: 192.168.1.81:4500, this: 01BBDF28, recv data nRecvLen = 4380
+file: f:\code\net_engine\ht_sockhandler.cpp, line: 232, ip: 192.168.1.81:4500, ispacket: 1, this: 01BBDF28,handle input!
+file: f:\code\net_engine\ht_sockhandler.cpp, line: 296, ip: 192.168.1.81:4500, this: 01BBDF28, recv data len <  packlen= 357484, 
+file: f:\code\net_engine\ht_sockhandler.cpp, line: 310, ip: 192.168.1.81:4500, this: 01BBDF28, recv data nRecvLen = 4380
+file: f:\code\net_engine\ht_sockhandler.cpp, line: 232, ip: 192.168.1.81:4500, ispacket: 1, this: 01BBDF28,handle input!
+file: f:\code\net_engine\ht_sockhandler.cpp, line: 296, ip: 192.168.1.81:4500, this: 01BBDF28, recv data len <  packlen= 357484, 
+file: f:\code\net_engine\ht_sockhandler.cpp, line: 310, ip: 192.168.1.81:4500, this: 01BBDF28, recv data nRecvLen = 4380
+file: f:\code\net_engine\ht_sockhandler.cpp, line: 232, ip: 192.168.1.81:4500, ispacket: 1, this: 01BBDF28,handle input!
+file: f:\code\net_engine\ht_sockhandler.cpp, line: 296, ip: 192.168.1.81:4500, this: 01BBDF28, recv data len <  packlen= 357484, 
+file: f:\code\net_engine\ht_sockhandler.cpp, line: 310, ip: 192.168.1.81:4500, this: 01BBDF28, recv data nRecvLen = 4380
+file: f:\code\net_engine\ht_sockhandler.cpp, line: 232, ip: 192.168.1.81:4500, ispacket: 1, this: 01BBDF28,handle input!
+file: f:\code\net_engine\ht_sockhandler.cpp, line: 296, ip: 192.168.1.81:4500, this: 01BBDF28, recv data len <  packlen= 357484, 
+file: f:\code\net_engine\ht_sockhandler.cpp, line: 310, ip: 192.168.1.81:4500, this: 01BBDF28, recv data nRecvLen = 4380
+file: f:\code\net_engine\ht_sockhandler.cpp, line: 232, ip: 192.168.1.81:4500, ispacket: 1, this: 01BBDF28,handle input!
+file: f:\code\net_engine\ht_sockhandler.cpp, line: 296, ip: 192.168.1.81:4500, this: 01BBDF28, recv data len <  packlen= 357484, 
+file: f:\code\net_engine\ht_sockhandler.cpp, line: 310, ip: 192.168.1.81:4500, this: 01BBDF28, recv data nRecvLen = 4380
+file: f:\code\net_engine\ht_sockhandler.cpp, line: 232, ip: 192.168.1.81:4500, ispacket: 1, this: 01BBDF28,handle input!
+file: f:\code\net_engine\ht_sockhandler.cpp, line: 296, ip: 192.168.1.81:4500, this: 01BBDF28, recv data len <  packlen= 357484, 
+file: f:\code\net_engine\ht_sockhandler.cpp, line: 310, ip: 192.168.1.81:4500, this: 01BBDF28, recv data nRecvLen = 4380
+file: f:\code\net_engine\ht_sockhandler.cpp, line: 232, ip: 192.168.1.81:4500, ispacket: 1, this: 01BBDF28,handle input!
+file: f:\code\net_engine\ht_sockhandler.cpp, line: 296, ip: 192.168.1.81:4500, this: 01BBDF28, recv data len <  packlen= 357484, 
+file: f:\code\net_engine\ht_sockhandler.cpp, line: 310, ip: 192.168.1.81:4500, this: 01BBDF28, recv data nRecvLen = 4380
+file: f:\code\net_engine\ht_sockhandler.cpp, line: 232, ip: 192.168.1.81:4500, ispacket: 1, this: 01BBDF28,handle input!
+file: f:\code\net_engine\ht_sockhandler.cpp, line: 296, ip: 192.168.1.81:4500, this: 01BBDF28, recv data len <  packlen= 357484, 
+file: f:\code\net_engine\ht_sockhandler.cpp, line: 310, ip: 192.168.1.81:4500, this: 01BBDF28, recv data nRecvLen = 4380
+file: f:\code\net_engine\ht_sockhandler.cpp, line: 232, ip: 192.168.1.81:4500, ispacket: 1, this: 01BBDF28,handle input!
+file: f:\code\net_engine\ht_sockhandler.cpp, line: 296, ip: 192.168.1.81:4500, this: 01BBDF28, recv data len <  packlen= 357484, 
+file: f:\code\net_engine\ht_sockhandler.cpp, line: 310, ip: 192.168.1.81:4500, this: 01BBDF28, recv data nRecvLen = 4380
+file: f:\code\net_engine\ht_sockhandler.cpp, line: 232, ip: 192.168.1.81:4500, ispacket: 1, this: 01BBDF28,handle input!
+file: f:\code\net_engine\ht_sockhandler.cpp, line: 296, ip: 192.168.1.81:4500, this: 01BBDF28, recv data len <  packlen= 357484, 
+file: f:\code\net_engine\ht_sockhandler.cpp, line: 310, ip: 192.168.1.81:4500, this: 01BBDF28, recv data nRecvLen = 4380
+file: f:\code\net_engine\ht_sockhandler.cpp, line: 232, ip: 192.168.1.81:4500, ispacket: 1, this: 01BBDF28,handle input!
+file: f:\code\net_engine\ht_sockhandler.cpp, line: 296, ip: 192.168.1.81:4500, this: 01BBDF28, recv data len <  packlen= 357484, 
+file: f:\code\net_engine\ht_sockhandler.cpp, line: 310, ip: 192.168.1.81:4500, this: 01BBDF28, recv data nRecvLen = 4380
+file: f:\code\net_engine\ht_sockhandler.cpp, line: 232, ip: 192.168.1.81:4500, ispacket: 1, this: 01BBDF28,handle input!
+file: f:\code\net_engine\ht_sockhandler.cpp, line: 296, ip: 192.168.1.81:4500, this: 01BBDF28, recv data len <  packlen= 357484, 
+file: f:\code\net_engine\ht_sockhandler.cpp, line: 310, ip: 192.168.1.81:4500, this: 01BBDF28, recv data nRecvLen = 2920
+file: f:\code\net_engine\ht_sockhandler.cpp, line: 232, ip: 192.168.1.81:4500, ispacket: 1, this: 01BBDF28,handle input!
+file: f:\code\net_engine\ht_sockhandler.cpp, line: 296, ip: 192.168.1.81:4500, this: 01BBDF28, recv data len <  packlen= 357484, 
+file: f:\code\net_engine\ht_sockhandler.cpp, line: 310, ip: 192.168.1.81:4500, this: 01BBDF28, recv data nRecvLen = 4380
+file: f:\code\net_engine\ht_sockhandler.cpp, line: 232, ip: 192.168.1.81:4500, ispacket: 1, this: 01BBDF28,handle input!
+file: f:\code\net_engine\ht_sockhandler.cpp, line: 296, ip: 192.168.1.81:4500, this: 01BBDF28, recv data len <  packlen= 357484, 
+file: f:\code\net_engine\ht_sockhandler.cpp, line: 310, ip: 192.168.1.81:4500, this: 01BBDF28, recv data nRecvLen = 4380
+file: f:\code\net_engine\ht_sockhandler.cpp, line: 232, ip: 192.168.1.81:4500, ispacket: 1, this: 01BBDF28,handle input!
+file: f:\code\net_engine\ht_sockhandler.cpp, line: 296, ip: 192.168.1.81:4500, this: 01BBDF28, recv data len <  packlen= 357484, 
+file: f:\code\net_engine\ht_sockhandler.cpp, line: 310, ip: 192.168.1.81:4500, this: 01BBDF28, recv data nRecvLen = 4380
+file: f:\code\net_engine\ht_sockhandler.cpp, line: 232, ip: 192.168.1.81:4500, ispacket: 1, this: 01BBDF28,handle input!
+file: f:\code\net_engine\ht_sockhandler.cpp, line: 296, ip: 192.168.1.81:4500, this: 01BBDF28, recv data len <  packlen= 357484, 
+file: f:\code\net_engine\ht_sockhandler.cpp, line: 310, ip: 192.168.1.81:4500, this: 01BBDF28, recv data nRecvLen = 8760
+file: f:\code\net_engine\ht_sockhandler.cpp, line: 232, ip: 192.168.1.81:4500, ispacket: 1, this: 01BBDF28,handle input!
+file: f:\code\net_engine\ht_sockhandler.cpp, line: 296, ip: 192.168.1.81:4500, this: 01BBDF28, recv data len <  packlen= 357484, 
+file: f:\code\net_engine\ht_sockhandler.cpp, line: 310, ip: 192.168.1.81:4500, this: 01BBDF28, recv data nRecvLen = 32120
+file: f:\code\net_engine\ht_sockhandler.cpp, line: 232, ip: 192.168.1.81:4500, ispacket: 1, this: 01BBDF28,handle input!
+file: f:\code\net_engine\ht_sockhandler.cpp, line: 296, ip: 192.168.1.81:4500, this: 01BBDF28, recv data len <  packlen= 357484, 
+file: f:\code\net_engine\ht_sockhandler.cpp, line: 310, ip: 192.168.1.81:4500, this: 01BBDF28, recv data nRecvLen = 4380
+file: f:\code\net_engine\ht_sockhandler.cpp, line: 232, ip: 192.168.1.81:4500, ispacket: 1, this: 01BBDF28,handle input!
+file: f:\code\net_engine\ht_sockhandler.cpp, line: 296, ip: 192.168.1.81:4500, this: 01BBDF28, recv data len <  packlen= 357484, 
+file: f:\code\net_engine\ht_sockhandler.cpp, line: 310, ip: 192.168.1.81:4500, this: 01BBDF28, recv data nRecvLen = 4380
+file: f:\code\net_engine\ht_sockhandler.cpp, line: 232, ip: 192.168.1.81:4500, ispacket: 1, this: 01BBDF28,handle input!
+file: f:\code\net_engine\ht_sockhandler.cpp, line: 296, ip: 192.168.1.81:4500, this: 01BBDF28, recv data len <  packlen= 357484, 
+file: f:\code\net_engine\ht_sockhandler.cpp, line: 310, ip: 192.168.1.81:4500, this: 01BBDF28, recv data nRecvLen = 4380
+file: f:\code\net_engine\ht_sockhandler.cpp, line: 232, ip: 192.168.1.81:4500, ispacket: 1, this: 01BBDF28,handle input!
+file: f:\code\net_engine\ht_sockhandler.cpp, line: 296, ip: 192.168.1.81:4500, this: 01BBDF28, recv data len <  packlen= 357484, 
+file: f:\code\net_engine\ht_sockhandler.cpp, line: 310, ip: 192.168.1.81:4500, this: 01BBDF28, recv data nRecvLen = 4380
+file: f:\code\net_engine\ht_sockhandler.cpp, line: 232, ip: 192.168.1.81:4500, ispacket: 1, this: 01BBDF28,handle input!
+file: f:\code\net_engine\ht_sockhandler.cpp, line: 296, ip: 192.168.1.81:4500, this: 01BBDF28, recv data len <  packlen= 357484, 
+file: f:\code\net_engine\ht_sockhandler.cpp, line: 310, ip: 192.168.1.81:4500, this: 01BBDF28, recv data nRecvLen = 4380
+file: f:\code\net_engine\ht_sockhandler.cpp, line: 232, ip: 192.168.1.81:4500, ispacket: 1, this: 01BBDF28,handle input!
+file: f:\code\net_engine\ht_sockhandler.cpp, line: 296, ip: 192.168.1.81:4500, this: 01BBDF28, recv data len <  packlen= 357484, 
+file: f:\code\net_engine\ht_sockhandler.cpp, line: 310, ip: 192.168.1.81:4500, this: 01BBDF28, recv data nRecvLen = 4380
+file: f:\code\net_engine\ht_sockhandler.cpp, line: 232, ip: 192.168.1.81:4500, ispacket: 1, this: 01BBDF28,handle input!
+file: f:\code\net_engine\ht_sockhandler.cpp, line: 296, ip: 192.168.1.81:4500, this: 01BBDF28, recv data len <  packlen= 357484, 
+file: f:\code\net_engine\ht_sockhandler.cpp, line: 310, ip: 192.168.1.81:4500, this: 01BBDF28, recv data nRecvLen = 4380
+file: f:\code\net_engine\ht_sockhandler.cpp, line: 232, ip: 192.168.1.81:4500, ispacket: 1, this: 01BBDF28,handle input!
+file: f:\code\net_engine\ht_sockhandler.cpp, line: 296, ip: 192.168.1.81:4500, this: 01BBDF28, recv data len <  packlen= 357484, 
+file: f:\code\net_engine\ht_sockhandler.cpp, line: 310, ip: 192.168.1.81:4500, this: 01BBDF28, recv data nRecvLen = 4380
+file: f:\code\net_engine\ht_sockhandler.cpp, line: 232, ip: 192.168.1.81:4500, ispacket: 1, this: 01BBDF28,handle input!
+file: f:\code\net_engine\ht_sockhandler.cpp, line: 296, ip: 192.168.1.81:4500, this: 01BBDF28, recv data len <  packlen= 357484, 
+file: f:\code\net_engine\ht_sockhandler.cpp, line: 310, ip: 192.168.1.81:4500, this: 01BBDF28, recv data nRecvLen = 4380
+file: f:\code\net_engine\ht_sockhandler.cpp, line: 232, ip: 192.168.1.81:4500, ispacket: 1, this: 01BBDF28,handle input!
+file: f:\code\net_engine\ht_sockhandler.cpp, line: 296, ip: 192.168.1.81:4500, this: 01BBDF28, recv data len <  packlen= 357484, 
+file: f:\code\net_engine\ht_sockhandler.cpp, line: 310, ip: 192.168.1.81:4500, this: 01BBDF28, recv data nRecvLen = 2920
+file: f:\code\net_engine\ht_sockhandler.cpp, line: 232, ip: 192.168.1.81:4500, ispacket: 1, this: 01BBDF28,handle input!
+file: f:\code\net_engine\ht_sockhandler.cpp, line: 296, ip: 192.168.1.81:4500, this: 01BBDF28, recv data len <  packlen= 357484, 
+file: f:\code\net_engine\ht_sockhandler.cpp, line: 310, ip: 192.168.1.81:4500, this: 01BBDF28, recv data nRecvLen = 4380
+file: f:\code\net_engine\ht_sockhandler.cpp, line: 232, ip: 192.168.1.81:4500, ispacket: 1, this: 01BBDF28,handle input!
+file: f:\code\net_engine\ht_sockhandler.cpp, line: 296, ip: 192.168.1.81:4500, this: 01BBDF28, recv data len <  packlen= 357484, 
+file: f:\code\net_engine\ht_sockhandler.cpp, line: 310, ip: 192.168.1.81:4500, this: 01BBDF28, recv data nRecvLen = 4380
+file: f:\code\net_engine\ht_sockhandler.cpp, line: 232, ip: 192.168.1.81:4500, ispacket: 1, this: 01BBDF28,handle input!
+file: f:\code\net_engine\ht_sockhandler.cpp, line: 296, ip: 192.168.1.81:4500, this: 01BBDF28, recv data len <  packlen= 357484, 
+file: f:\code\net_engine\ht_sockhandler.cpp, line: 310, ip: 192.168.1.81:4500, this: 01BBDF28, recv data nRecvLen = 4380
+file: f:\code\net_engine\ht_sockhandler.cpp, line: 232, ip: 192.168.1.81:4500, ispacket: 1, this: 01BBDF28,handle input!
+file: f:\code\net_engine\ht_sockhandler.cpp, line: 296, ip: 192.168.1.81:4500, this: 01BBDF28, recv data len <  packlen= 357484, 
+file: f:\code\net_engine\ht_sockhandler.cpp, line: 310, ip: 192.168.1.81:4500, this: 01BBDF28, recv data nRecvLen = 4380
+file: f:\code\net_engine\ht_sockhandler.cpp, line: 232, ip: 192.168.1.81:4500, ispacket: 1, this: 01BBDF28,handle input!
+file: f:\code\net_engine\ht_sockhandler.cpp, line: 296, ip: 192.168.1.81:4500, this: 01BBDF28, recv data len <  packlen= 357484, 
+file: f:\code\net_engine\ht_sockhandler.cpp, line: 310, ip: 192.168.1.81:4500, this: 01BBDF28, recv data nRecvLen = 4380
+file: f:\code\net_engine\ht_sockhandler.cpp, line: 232, ip: 192.168.1.81:4500, ispacket: 1, this: 01BBDF28,handle input!
+file: f:\code\net_engine\ht_sockhandler.cpp, line: 296, ip: 192.168.1.81:4500, this: 01BBDF28, recv data len <  packlen= 357484, 
+file: f:\code\net_engine\ht_sockhandler.cpp, line: 310, ip: 192.168.1.81:4500, this: 01BBDF28, recv data nRecvLen = 4380
+file: f:\code\net_engine\ht_sockhandler.cpp, line: 232, ip: 192.168.1.81:4500, ispacket: 1, this: 01BBDF28,handle input!
+file: f:\code\net_engine\ht_sockhandler.cpp, line: 296, ip: 192.168.1.81:4500, this: 01BBDF28, recv data len <  packlen= 357484, 
+file: f:\code\net_engine\ht_sockhandler.cpp, line: 310, ip: 192.168.1.81:4500, this: 01BBDF28, recv data nRecvLen = 4380
+file: f:\code\net_engine\ht_sockhandler.cpp, line: 232, ip: 192.168.1.81:4500, ispacket: 1, this: 01BBDF28,handle input!
+file: f:\code\net_engine\ht_sockhandler.cpp, line: 296, ip: 192.168.1.81:4500, this: 01BBDF28, recv data len <  packlen= 357484, 
+file: f:\code\net_engine\ht_sockhandler.cpp, line: 310, ip: 192.168.1.81:4500, this: 01BBDF28, recv data nRecvLen = 2920
+file: f:\code\net_engine\ht_sockhandler.cpp, line: 232, ip: 192.168.1.81:4500, ispacket: 1, this: 01BBDF28,handle input!
+file: f:\code\net_engine\ht_sockhandler.cpp, line: 296, ip: 192.168.1.81:4500, this: 01BBDF28, recv data len <  packlen= 357484, 
+file: f:\code\net_engine\ht_sockhandler.cpp, line: 310, ip: 192.168.1.81:4500, this: 01BBDF28, recv data nRecvLen = 4380
+file: f:\code\net_engine\ht_sockhandler.cpp, line: 232, ip: 192.168.1.81:4500, ispacket: 1, this: 01BBDF28,handle input!
+file: f:\code\net_engine\ht_sockhandler.cpp, line: 296, ip: 192.168.1.81:4500, this: 01BBDF28, recv data len <  packlen= 357484, 
+file: f:\code\net_engine\ht_sockhandler.cpp, line: 310, ip: 192.168.1.81:4500, this: 01BBDF28, recv data nRecvLen = 4380
+file: f:\code\net_engine\ht_sockhandler.cpp, line: 232, ip: 192.168.1.81:4500, ispacket: 1, this: 01BBDF28,handle input!
+file: f:\code\net_engine\ht_sockhandler.cpp, line: 296, ip: 192.168.1.81:4500, this: 01BBDF28, recv data len <  packlen= 357484, 
+file: f:\code\net_engine\ht_sockhandler.cpp, line: 310, ip: 192.168.1.81:4500, this: 01BBDF28, recv data nRecvLen = 4380
+file: f:\code\net_engine\ht_sockhandler.cpp, line: 232, ip: 192.168.1.81:4500, ispacket: 1, this: 01BBDF28,handle input!
+file: f:\code\net_engine\ht_sockhandler.cpp, line: 296, ip: 192.168.1.81:4500, this: 01BBDF28, recv data len <  packlen= 357484, 
+file: f:\code\net_engine\ht_sockhandler.cpp, line: 310, ip: 192.168.1.81:4500, this: 01BBDF28, recv data nRecvLen = 4380
+file: f:\code\net_engine\ht_sockhandler.cpp, line: 232, ip: 192.168.1.81:4500, ispacket: 1, this: 01BBDF28,handle input!
+file: f:\code\net_engine\ht_sockhandler.cpp, line: 296, ip: 192.168.1.81:4500, this: 01BBDF28, recv data len <  packlen= 357484, 
+file: f:\code\net_engine\ht_sockhandler.cpp, line: 310, ip: 192.168.1.81:4500, this: 01BBDF28, recv data nRecvLen = 4380
+file: f:\code\net_engine\ht_sockhandler.cpp, line: 232, ip: 192.168.1.81:4500, ispacket: 1, this: 01BBDF28,handle input!
+file: f:\code\net_engine\ht_sockhandler.cpp, line: 296, ip: 192.168.1.81:4500, this: 01BBDF28, recv data len <  packlen= 357484, 
+file: f:\code\net_engine\ht_sockhandler.cpp, line: 310, ip: 192.168.1.81:4500, this: 01BBDF28, recv data nRecvLen = 4380
+file: f:\code\net_engine\ht_sockhandler.cpp, line: 232, ip: 192.168.1.81:4500, ispacket: 1, this: 01BBDF28,handle input!
+file: f:\code\net_engine\ht_sockhandler.cpp, line: 296, ip: 192.168.1.81:4500, this: 01BBDF28, recv data len <  packlen= 357484, 
+file: f:\code\net_engine\ht_sockhandler.cpp, line: 310, ip: 192.168.1.81:4500, this: 01BBDF28, recv data nRecvLen = 4380
+file: f:\code\net_engine\ht_sockhandler.cpp, line: 232, ip: 192.168.1.81:4500, ispacket: 1, this: 01BBDF28,handle input!
+file: f:\code\net_engine\ht_sockhandler.cpp, line: 296, ip: 192.168.1.81:4500, this: 01BBDF28, recv data len <  packlen= 357484, 
+file: f:\code\net_engine\ht_sockhandler.cpp, line: 310, ip: 192.168.1.81:4500, this: 01BBDF28, recv data nRecvLen = 4380
+file: f:\code\net_engine\ht_sockhandler.cpp, line: 232, ip: 192.168.1.81:4500, ispacket: 1, this: 01BBDF28,handle input!
+file: f:\code\net_engine\ht_sockhandler.cpp, line: 296, ip: 192.168.1.81:4500, this: 01BBDF28, recv data len <  packlen= 357484, 
+file: f:\code\net_engine\ht_sockhandler.cpp, line: 310, ip: 192.168.1.81:4500, this: 01BBDF28, recv data nRecvLen = 4380
+file: f:\code\net_engine\ht_sockhandler.cpp, line: 232, ip: 192.168.1.81:4500, ispacket: 1, this: 01BBDF28,handle input!
+file: f:\code\net_engine\ht_sockhandler.cpp, line: 296, ip: 192.168.1.81:4500, this: 01BBDF28, recv data len <  packlen= 357484, 
+file: f:\code\net_engine\ht_sockhandler.cpp, line: 310, ip: 192.168.1.81:4500, this: 01BBDF28, recv data nRecvLen = 4380
+file: f:\code\net_engine\ht_sockhandler.cpp, line: 232, ip: 192.168.1.81:4500, ispacket: 1, this: 01BBDF28,handle input!
+file: f:\code\net_engine\ht_sockhandler.cpp, line: 296, ip: 192.168.1.81:4500, this: 01BBDF28, recv data len <  packlen= 357484, 
+file: f:\code\net_engine\ht_sockhandler.cpp, line: 310, ip: 192.168.1.81:4500, this: 01BBDF28, recv data nRecvLen = 4380
+file: f:\code\net_engine\ht_sockhandler.cpp, line: 232, ip: 192.168.1.81:4500, ispacket: 1, this: 01BBDF28,handle input!
+file: f:\code\net_engine\ht_sockhandler.cpp, line: 296, ip: 192.168.1.81:4500, this: 01BBDF28, recv data len <  packlen= 357484, 
+file: f:\code\net_engine\ht_sockhandler.cpp, line: 310, ip: 192.168.1.81:4500, this: 01BBDF28, recv data nRecvLen = 4380
+file: f:\code\net_engine\ht_sockhandler.cpp, line: 232, ip: 192.168.1.81:4500, ispacket: 1, this: 01BBDF28,handle input!
+file: f:\code\net_engine\ht_sockhandler.cpp, line: 296, ip: 192.168.1.81:4500, this: 01BBDF28, recv data len <  packlen= 357484, 
+file: f:\code\net_engine\ht_sockhandler.cpp, line: 310, ip: 192.168.1.81:4500, this: 01BBDF28, recv data nRecvLen = 2920
+file: f:\code\net_engine\ht_sockhandler.cpp, line: 232, ip: 192.168.1.81:4500, ispacket: 1, this: 01BBDF28,handle input!
+file: f:\code\net_engine\ht_sockhandler.cpp, line: 296, ip: 192.168.1.81:4500, this: 01BBDF28, recv data len <  packlen= 357484, 
+file: f:\code\net_engine\ht_sockhandler.cpp, line: 310, ip: 192.168.1.81:4500, this: 01BBDF28, recv data nRecvLen = 4380
+file: f:\code\net_engine\ht_sockhandler.cpp, line: 232, ip: 192.168.1.81:4500, ispacket: 1, this: 01BBDF28,handle input!
+file: f:\code\net_engine\ht_sockhandler.cpp, line: 296, ip: 192.168.1.81:4500, this: 01BBDF28, recv data len <  packlen= 357484, 
+file: f:\code\net_engine\ht_sockhandler.cpp, line: 310, ip: 192.168.1.81:4500, this: 01BBDF28, recv data nRecvLen = 4380
+file: f:\code\net_engine\ht_sockhandler.cpp, line: 232, ip: 192.168.1.81:4500, ispacket: 1, this: 01BBDF28,handle input!
+file: f:\code\net_engine\ht_sockhandler.cpp, line: 296, ip: 192.168.1.81:4500, this: 01BBDF28, recv data len <  packlen= 357484, 
+file: f:\code\net_engine\ht_sockhandler.cpp, line: 310, ip: 192.168.1.81:4500, this: 01BBDF28, recv data nRecvLen = 4380
+file: f:\code\net_engine\ht_sockhandler.cpp, line: 232, ip: 192.168.1.81:4500, ispacket: 1, this: 01BBDF28,handle input!
+file: f:\code\net_engine\ht_sockhandler.cpp, line: 296, ip: 192.168.1.81:4500, this: 01BBDF28, recv data len <  packlen= 357484, 
+file: f:\code\net_engine\ht_sockhandler.cpp, line: 310, ip: 192.168.1.81:4500, this: 01BBDF28, recv data nRecvLen = 4380
+file: f:\code\net_engine\ht_sockhandler.cpp, line: 232, ip: 192.168.1.81:4500, ispacket: 1, this: 01BBDF28,handle input!
+file: f:\code\net_engine\ht_sockhandler.cpp, line: 296, ip: 192.168.1.81:4500, this: 01BBDF28, recv data len <  packlen= 357484, 
+file: f:\code\net_engine\ht_sockhandler.cpp, line: 310, ip: 192.168.1.81:4500, this: 01BBDF28, recv data nRecvLen = 4380
+file: f:\code\net_engine\ht_sockhandler.cpp, line: 232, ip: 192.168.1.81:4500, ispacket: 1, this: 01BBDF28,handle input!
+file: f:\code\net_engine\ht_sockhandler.cpp, line: 296, ip: 192.168.1.81:4500, this: 01BBDF28, recv data len <  packlen= 357484, 
+file: f:\code\net_engine\ht_sockhandler.cpp, line: 310, ip: 192.168.1.81:4500, this: 01BBDF28, recv data nRecvLen = 4380
+file: f:\code\net_engine\ht_sockhandler.cpp, line: 232, ip: 192.168.1.81:4500, ispacket: 1, this: 01BBDF28,handle input!
+file: f:\code\net_engine\ht_sockhandler.cpp, line: 296, ip: 192.168.1.81:4500, this: 01BBDF28, recv data len <  packlen= 357484, 
+file: f:\code\net_engine\ht_sockhandler.cpp, line: 310, ip: 192.168.1.81:4500, this: 01BBDF28, recv data nRecvLen = 4380
+file: f:\code\net_engine\ht_sockhandler.cpp, line: 232, ip: 192.168.1.81:4500, ispacket: 1, this: 01BBDF28,handle input!
+file: f:\code\net_engine\ht_sockhandler.cpp, line: 296, ip: 192.168.1.81:4500, this: 01BBDF28, recv data len <  packlen= 357484, 
+file: f:\code\net_engine\ht_sockhandler.cpp, line: 310, ip: 192.168.1.81:4500, this: 01BBDF28, recv data nRecvLen = 2920
+file: f:\code\net_engine\ht_sockhandler.cpp, line: 232, ip: 192.168.1.81:4500, ispacket: 1, this: 01BBDF28,handle input!
+file: f:\code\net_engine\ht_sockhandler.cpp, line: 296, ip: 192.168.1.81:4500, this: 01BBDF28, recv data len <  packlen= 357484, 
+file: f:\code\net_engine\ht_sockhandler.cpp, line: 310, ip: 192.168.1.81:4500, this: 01BBDF28, recv data nRecvLen = 4380
+file: f:\code\net_engine\ht_sockhandler.cpp, line: 232, ip: 192.168.1.81:4500, ispacket: 1, this: 01BBDF28,handle input!
+file: f:\code\net_engine\ht_sockhandler.cpp, line: 296, ip: 192.168.1.81:4500, this: 01BBDF28, recv data len <  packlen= 357484, 
+file: f:\code\net_engine\ht_sockhandler.cpp, line: 310, ip: 192.168.1.81:4500, this: 01BBDF28, recv data nRecvLen = 4380
+file: f:\code\net_engine\ht_sockhandler.cpp, line: 232, ip: 192.168.1.81:4500, ispacket: 1, this: 01BBDF28,handle input!
+file: f:\code\net_engine\ht_sockhandler.cpp, line: 296, ip: 192.168.1.81:4500, this: 01BBDF28, recv data len <  packlen= 357484, 
+file: f:\code\net_engine\ht_sockhandler.cpp, line: 310, ip: 192.168.1.81:4500, this: 01BBDF28, recv data nRecvLen = 4380
+file: f:\code\net_engine\ht_sockhandler.cpp, line: 232, ip: 192.168.1.81:4500, ispacket: 1, this: 01BBDF28,handle input!
+file: f:\code\net_engine\ht_sockhandler.cpp, line: 296, ip: 192.168.1.81:4500, this: 01BBDF28, recv data len <  packlen= 357484, 
+file: f:\code\net_engine\ht_sockhandler.cpp, line: 310, ip: 192.168.1.81:4500, this: 01BBDF28, recv data nRecvLen = 4380
+file: f:\code\net_engine\ht_sockhandler.cpp, line: 232, ip: 192.168.1.81:4500, ispacket: 1, this: 01BBDF28,handle input!
+file: f:\code\net_engine\ht_sockhandler.cpp, line: 296, ip: 192.168.1.81:4500, this: 01BBDF28, recv data len <  packlen= 357484, 
+file: f:\code\net_engine\ht_sockhandler.cpp, line: 310, ip: 192.168.1.81:4500, this: 01BBDF28, recv data nRecvLen = 4380
+file: f:\code\net_engine\ht_sockhandler.cpp, line: 232, ip: 192.168.1.81:4500, ispacket: 1, this: 01BBDF28,handle input!
+file: f:\code\net_engine\ht_sockhandler.cpp, line: 296, ip: 192.168.1.81:4500, this: 01BBDF28, recv data len <  packlen= 357484, 
+file: f:\code\net_engine\ht_sockhandler.cpp, line: 310, ip: 192.168.1.81:4500, this: 01BBDF28, recv data nRecvLen = 4380
+file: f:\code\net_engine\ht_sockhandler.cpp, line: 232, ip: 192.168.1.81:4500, ispacket: 1, this: 01BBDF28,handle input!
+file: f:\code\net_engine\ht_sockhandler.cpp, line: 296, ip: 192.168.1.81:4500, this: 01BBDF28, recv data len <  packlen= 357484, 
+file: f:\code\net_engine\ht_sockhandler.cpp, line: 310, ip: 192.168.1.81:4500, this: 01BBDF28, recv data nRecvLen = 4380
+file: f:\code\net_engine\ht_sockhandler.cpp, line: 232, ip: 192.168.1.81:4500, ispacket: 1, this: 01BBDF28,handle input!
+file: f:\code\net_engine\ht_sockhandler.cpp, line: 285, ip: 192.168.1.81:4500, this: 01BBDF28, call readCallback_ ,packlen = 357484
+file: f:\code\net_engine\ht_sockhandler.cpp, line: 310, ip: 192.168.1.81:4500, this: 01BBDF28, recv data nRecvLen = 4168

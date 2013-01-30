@@ -1,0 +1,454 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<wxsmith>
+	<object class="wxFrame" name="New_PowerMangerFrame">
+		<title>浩特视频应用综合管理平台 HT-VAIMP V2012</title>
+		<centered>1</centered>
+		<id_arg>0</id_arg>
+		<object class="wxBoxSizer" variable="BoxSizer1" member="no">
+			<object class="sizeritem">
+				<object class="wxBoxSizer" variable="BoxSizer2" member="no">
+					<orient>wxVERTICAL</orient>
+					<object class="sizeritem">
+						<object class="wxTreeCtrl" name="ID_TREECTRL1" variable="TreeCtrl1" member="yes">
+							<image_list></image_list>
+							<tree_items>
+								<item>TreeCtrl1</item>
+								<item></item>
+							</tree_items>
+							<items_text>
+								<item2>TreeCtrl1</item2>
+								<item2></item2>
+							</items_text>
+							<size>215,616</size>
+							<style>wxTR_EDIT_LABELS|wxTR_DEFAULT_STYLE</style>
+							<handler function="OnTreeCtrl1BeginLabelEdit" entry="EVT_TREE_BEGIN_LABEL_EDIT" />
+							<handler function="OnTreeCtrl1EndLabelEdit" entry="EVT_TREE_END_LABEL_EDIT" />
+							<handler function="OnTreeCtrl1ItemRightClick" entry="EVT_TREE_ITEM_RIGHT_CLICK" />
+							<handler function="OnTreeCtrl1SelectionChanged_DisPlay_GUI" entry="EVT_TREE_SEL_CHANGED" />
+						</object>
+						<flag>wxALL|wxEXPAND|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+						<border>5</border>
+						<option>6</option>
+					</object>
+				</object>
+				<flag>wxALL|wxEXPAND|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+				<border>5</border>
+			</object>
+			<object class="sizeritem">
+				<object class="wxBoxSizer" variable="BoxSizer3" member="no">
+					<object class="sizeritem">
+						<object class="wxNotebook" name="ID_NOTEBOOK1" variable="Notebook1" member="yes">
+							<object class="notebookpage">
+								<object class="wxPanel" name="ID_PANEL1" variable="Panel1" member="yes">
+									<handler function="OnPanel1Paint_Show_Log" entry="EVT_PAINT" />
+									<handler function="OnPanel1Resize_Refresh_Panel1" entry="EVT_SIZE" />
+								</object>
+								<label>欢迎光临</label>
+							</object>
+							<object class="notebookpage">
+								<object class="wxPanel" name="ID_PANEL3" variable="Panel3" member="yes">
+									<object class="wxBoxSizer" variable="BoxSizer12" member="no">
+										<object class="sizeritem">
+											<object class="wxBoxSizer" variable="BoxSizer13" member="no">
+												<orient>wxVERTICAL</orient>
+												<object class="sizeritem">
+													<object class="wxBoxSizer" variable="BoxSizer14" member="no">
+														<object class="sizeritem">
+															<object class="wxStaticText" name="ID_STATICTEXT7" variable="StaticText7" member="yes">
+																<label>用户名</label>
+																<style>wxALIGN_RIGHT</style>
+															</object>
+															<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+															<border>5</border>
+														</object>
+														<object class="sizeritem">
+															<object class="wxTextCtrl" name="ID_TEXTCTRL3" variable="TextCtrl_UserName" member="yes">
+																<enabled>0</enabled>
+															</object>
+															<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+															<border>5</border>
+														</object>
+														<object class="sizeritem">
+															<object class="wxStaticText" name="ID_STATICTEXT8" variable="StaticText8" member="yes">
+																<label>密码</label>
+																<style>wxALIGN_RIGHT</style>
+															</object>
+															<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+															<border>5</border>
+														</object>
+														<object class="sizeritem">
+															<object class="wxTextCtrl" name="ID_TEXTCTRL4" variable="TextCtrl_UserPwd" member="yes">
+																<enabled>0</enabled>
+																<style>wxTE_PASSWORD</style>
+															</object>
+															<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+															<border>5</border>
+														</object>
+														<object class="sizeritem">
+															<object class="wxStaticText" name="ID_STATICTEXT9" variable="StaticText9" member="yes">
+																<label>确认密码</label>
+																<style>wxALIGN_RIGHT</style>
+															</object>
+															<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+															<border>5</border>
+														</object>
+														<object class="sizeritem">
+															<object class="wxTextCtrl" name="ID_TEXTCTRL5" variable="TextCtrl_UserSurePwd" member="yes">
+																<enabled>0</enabled>
+																<style>wxTE_PASSWORD</style>
+															</object>
+															<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+															<border>5</border>
+														</object>
+													</object>
+													<flag>wxALL|wxEXPAND|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+													<border>5</border>
+												</object>
+												<object class="sizeritem">
+													<object class="wxStaticBoxSizer" variable="StaticBoxSizer2" member="no">
+														<label>权限设置</label>
+														<orient>wxVERTICAL</orient>
+														<object class="sizeritem">
+															<object class="wxBoxSizer" variable="BoxSizer16" member="no" />
+															<flag>wxALL|wxEXPAND|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+															<border>5</border>
+															<option>1</option>
+														</object>
+														<object class="sizeritem">
+															<object class="wxBoxSizer" variable="BoxSizer17" member="no">
+																<object class="sizeritem">
+																	<object class="wxBoxSizer" variable="BoxSizer48" member="no">
+																		<orient>wxVERTICAL</orient>
+																		<object class="sizeritem">
+																			<object class="wxButton" name="ID_BUTTON9" variable="Button_AddPowerItem" member="yes">
+																				<label>增加权限项目</label>
+																				<handler function="OnButton_AddPowerItemClick" entry="EVT_BUTTON" />
+																			</object>
+																			<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+																			<border>5</border>
+																		</object>
+																		<object class="sizeritem">
+																			<object class="wxButton" name="ID_BUTTON10" variable="Button_ChangePowerItem" member="yes">
+																				<label>修改权限项目</label>
+																				<handler function="OnButton_ChangePowerItemClick" entry="EVT_BUTTON" />
+																			</object>
+																			<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+																			<border>5</border>
+																		</object>
+																		<object class="sizeritem">
+																			<object class="wxButton" name="ID_BUTTON12" variable="Button_DelPowerItem" member="yes">
+																				<label>删除权限项目</label>
+																				<handler function="OnButton_DelPowerItemClick" entry="EVT_BUTTON" />
+																			</object>
+																			<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+																			<border>5</border>
+																		</object>
+																	</object>
+																	<flag>wxALL|wxEXPAND|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+																	<border>5</border>
+																</object>
+																<object class="sizeritem">
+																	<object class="wxBoxSizer" variable="BoxSizer55" member="no">
+																		<object class="sizeritem">
+																			<object class="wxTreeCtrl" name="ID_TREECTRL4" variable="TreeCtrl_powerManager" member="yes">
+																				<image_list></image_list>
+																				<tree_items>
+																					<item>TreeCtrl_powerManager</item>
+																					<item></item>
+																				</tree_items>
+																				<items_text>
+																					<item2>TreeCtrl_powerManager</item2>
+																					<item2></item2>
+																				</items_text>
+																				<style>wxTR_EDIT_LABELS|wxTR_HIDE_ROOT|wxTR_DEFAULT_STYLE</style>
+																			</object>
+																			<flag>wxALL|wxEXPAND|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+																			<border>5</border>
+																			<option>1</option>
+																		</object>
+																	</object>
+																	<flag>wxALL|wxEXPAND|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+																	<border>5</border>
+																	<option>4</option>
+																</object>
+															</object>
+															<flag>wxALL|wxEXPAND|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+															<border>5</border>
+															<option>8</option>
+														</object>
+														<object class="sizeritem">
+															<object class="wxBoxSizer" variable="BoxSizer21" member="no">
+																<object class="sizeritem">
+																	<object class="wxButton" name="ID_BUTTON1" variable="Button_SureUser" member="yes">
+																		<label>确认</label>
+																		<handler function="OnButton_SureUserClick" entry="EVT_BUTTON" />
+																	</object>
+																	<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+																	<border>5</border>
+																</object>
+																<object class="sizeritem">
+																	<object class="wxButton" name="ID_BUTTON2" variable="Button_CancelUser" member="yes">
+																		<label>取消</label>
+																	</object>
+																	<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+																	<border>5</border>
+																</object>
+															</object>
+															<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+															<border>5</border>
+														</object>
+													</object>
+													<flag>wxALL|wxEXPAND|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+													<border>5</border>
+													<option>1</option>
+												</object>
+											</object>
+											<flag>wxALL|wxEXPAND|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+											<border>5</border>
+											<option>3</option>
+										</object>
+										<object class="sizeritem">
+											<object class="wxBoxSizer" variable="BoxSizer6" member="no">
+												<object class="sizeritem">
+													<object class="wxTreeCtrl" name="ID_TREECTRL2" variable="TreeCtrl_DevTree" member="yes">
+														<image_list></image_list>
+														<tree_items>
+															<item>TreeCtrl_DevTree</item>
+															<item></item>
+														</tree_items>
+														<items_text>
+															<item2>TreeCtrl_DevTree</item2>
+															<item2></item2>
+														</items_text>
+													</object>
+													<flag>wxALL|wxEXPAND|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+													<border>5</border>
+													<option>1</option>
+												</object>
+											</object>
+											<flag>wxALL|wxEXPAND|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+											<border>5</border>
+											<option>1</option>
+										</object>
+									</object>
+								</object>
+								<label>用户</label>
+							</object>
+							<object class="notebookpage">
+								<object class="wxPanel" name="ID_PANEL8" variable="Panel8" member="yes">
+									<object class="wxBoxSizer" variable="BoxSizer29" member="no">
+										<object class="sizeritem">
+											<object class="wxBoxSizer" variable="BoxSizer37" member="no">
+												<orient>wxVERTICAL</orient>
+												<object class="sizeritem">
+													<object class="wxBoxSizer" variable="BoxSizer44" member="no">
+														<object class="sizeritem">
+															<object class="wxGridSizer" variable="GridSizer1" member="no">
+																<cols>4</cols>
+																<object class="sizeritem">
+																	<object class="wxStaticText" name="ID_STATICTEXT1" variable="StaticText1" member="yes">
+																		<label>名字</label>
+																	</object>
+																	<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+																	<border>5</border>
+																</object>
+																<object class="sizeritem">
+																	<object class="wxTextCtrl" name="ID_TEXTCTRL1" variable="TextCtrl_DevName" member="yes">
+																		<enabled>0</enabled>
+																	</object>
+																	<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+																	<border>5</border>
+																</object>
+																<object class="sizeritem">
+																	<object class="wxStaticText" name="ID_STATICTEXT2" variable="StaticText2" member="yes">
+																		<label>设备统一编号</label>
+																	</object>
+																	<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+																	<border>5</border>
+																</object>
+																<object class="sizeritem">
+																	<object class="wxTextCtrl" name="ID_TEXTCTRL2" variable="TextCtrl_devNum" member="yes">
+																		<enabled>0</enabled>
+																	</object>
+																	<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+																	<border>5</border>
+																</object>
+																<object class="sizeritem">
+																	<object class="wxStaticText" name="ID_STATICTEXT3" variable="StaticText3" member="yes">
+																		<label>选择设备厂家</label>
+																	</object>
+																	<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+																	<border>5</border>
+																</object>
+																<object class="sizeritem">
+																	<object class="wxChoice" name="ID_CHOICE1" variable="Choice_devType" member="yes">
+																		<content>
+																			<item>海康</item>
+																			<item>冠辉</item>
+																			<item>汉邦</item>
+																			<item>大华</item>
+																			<item>捷高</item>
+																			<item>微蒂</item>
+																			<item>德加拉</item>
+																			<item>网力</item>
+																			<item>烟感设备</item>
+																			<item>LED</item>
+																			<item>报警灯</item>
+																		</content>
+																		<enabled>0</enabled>
+																		<handler function="OnChoice_devTypeSelect" entry="EVT_CHOICE" />
+																	</object>
+																	<flag>wxALL|wxEXPAND|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+																	<border>5</border>
+																</object>
+																<object class="sizeritem">
+																	<object class="wxStaticText" name="ID_STATICTEXT4" variable="StaticText4" member="yes">
+																		<label>设备型号</label>
+																	</object>
+																	<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+																	<border>5</border>
+																</object>
+																<object class="sizeritem">
+																	<object class="wxTextCtrl" name="ID_TEXTCTRL7" variable="TextCtrl_devModel" member="yes">
+																		<enabled>0</enabled>
+																	</object>
+																	<flag>wxALL|wxEXPAND|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+																	<border>5</border>
+																</object>
+																<object class="sizeritem">
+																	<object class="wxStaticText" name="ID_STATICTEXT5" variable="StaticText5" member="yes">
+																		<label>设备ＩＰ</label>
+																	</object>
+																	<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+																	<border>5</border>
+																</object>
+																<object class="sizeritem">
+																	<object class="wxTextCtrl" name="ID_TEXTCTRL8" variable="TextCtrl_devIP" member="yes">
+																		<enabled>0</enabled>
+																	</object>
+																	<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+																	<border>5</border>
+																	<option>1</option>
+																</object>
+																<object class="sizeritem">
+																	<object class="wxStaticText" name="ID_STATICTEXT6" variable="StaticText6" member="yes">
+																		<label>设备端口</label>
+																	</object>
+																	<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+																	<border>5</border>
+																</object>
+																<object class="sizeritem">
+																	<object class="wxTextCtrl" name="ID_TEXTCTRL9" variable="TextCtrl_devPort" member="yes">
+																		<enabled>0</enabled>
+																	</object>
+																	<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+																	<border>5</border>
+																</object>
+															</object>
+															<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+															<border>5</border>
+														</object>
+													</object>
+													<flag>wxALL|wxEXPAND|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+													<border>5</border>
+												</object>
+												<object class="sizeritem">
+													<object class="wxBoxSizer" variable="BoxSizer4" member="no">
+														<object class="sizeritem">
+															<object class="wxStaticText" name="ID_STATICTEXT11" variable="StaticText11" member="yes">
+																<label>请在下面通道属性表中输入该设备的通道相关参数</label>
+															</object>
+															<flag>wxALL|wxEXPAND|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+															<border>5</border>
+														</object>
+													</object>
+													<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+													<border>5</border>
+												</object>
+												<object class="sizeritem">
+													<object class="wxBoxSizer" variable="BoxSizer45" member="no">
+														<object class="sizeritem">
+															<object class="wxListCtrl" name="ID_LISTCTRL5" variable="ListCtrl_Channel" member="yes">
+																<style>wxLC_REPORT|wxLC_EDIT_LABELS</style>
+																<handler function="OnListCtrl_ChannelBeginLabelEdit" entry="EVT_LIST_BEGIN_LABEL_EDIT" />
+																<handler function="OnListCtrl_ChannelEndLabelEdit" entry="EVT_LIST_END_LABEL_EDIT" />
+															</object>
+															<flag>wxALL|wxEXPAND|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+															<border>5</border>
+															<option>1</option>
+														</object>
+													</object>
+													<flag>wxALL|wxEXPAND|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+													<border>5</border>
+													<option>1</option>
+												</object>
+												<object class="sizeritem">
+													<object class="wxBoxSizer" variable="BoxSizer51" member="no">
+														<object class="sizeritem">
+															<object class="wxButton" name="ID_BUTTON5" variable="Button_Sure_Add_Device" member="yes">
+																<label>确认</label>
+																<handler function="OnButton_Add_DeviceClick" entry="EVT_BUTTON" />
+															</object>
+															<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+															<border>5</border>
+														</object>
+														<object class="sizeritem">
+															<object class="wxButton" name="ID_BUTTON6" variable="Button_CancelAdd_Dev" member="yes">
+																<label>取消</label>
+															</object>
+															<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+															<border>5</border>
+														</object>
+													</object>
+													<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+													<border>5</border>
+												</object>
+											</object>
+											<flag>wxALL|wxEXPAND|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+											<border>5</border>
+										</object>
+										<object class="sizeritem">
+											<object class="wxBoxSizer" variable="BoxSizer41" member="no">
+												<object class="sizeritem">
+													<object class="wxTreeCtrl" name="ID_TREECTRL3" variable="TreeCtrl_User" member="yes">
+														<image_list></image_list>
+														<tree_items>
+															<item>TreeCtrl_User</item>
+															<item></item>
+														</tree_items>
+														<items_text>
+															<item2>TreeCtrl_User</item2>
+															<item2></item2>
+														</items_text>
+													</object>
+													<flag>wxALL|wxEXPAND|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+													<border>5</border>
+													<option>1</option>
+												</object>
+											</object>
+											<flag>wxALL|wxEXPAND|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+											<border>5</border>
+											<option>1</option>
+										</object>
+									</object>
+								</object>
+								<label>设备信息</label>
+							</object>
+						</object>
+						<flag>wxALL|wxEXPAND|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+						<border>5</border>
+						<option>4</option>
+					</object>
+				</object>
+				<flag>wxALL|wxEXPAND|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+				<border>5</border>
+				<option>5</option>
+			</object>
+		</object>
+		<object class="wxStatusBar" name="ID_STATUSBAR1" variable="StatusBar1" member="yes">
+			<fields>1</fields>
+			<widths>-1</widths>
+			<styles>wxSB_NORMAL</styles>
+		</object>
+	</object>
+</wxsmith>

@@ -1,0 +1,17 @@
+The NET_Module compilation time: Nov 26 2012, 21:09:47
+The NET_Module start ok!
+file: src/HT_TcpServer.cpp, line: 13, port: 4500, ispacket: 1, server started!
+file: src/HT_NetModule.cpp, line: 30, reactor_event_loop thredid:(3085929360) start!
+file: src/HT_NetModule.cpp, line: 30, reactor_event_loop thredid:(3075439504) start!
+file: src/HT_NetModule.cpp, line: 30, reactor_event_loop thredid:(3064949648) start!
+file: src/HT_NetModule.cpp, line: 30, reactor_event_loop thredid:(3054459792) start!
+connect failed: Connection refused
+file: src/HT_SockHandler.cpp, line: 59, SockHandler point: 0xb5508638, new SockHandler!
+file:src/HT_TcpServer.cpp, line: 72, port: 4500, ispacket: 1, server accept new connections!
+file: src/HT_SockHandler.cpp, line: 502, ip: 192.168.1.86:43882, this: 0xb5508638, update reactor handler enableReading success
+file: src/HT_SockHandler.cpp, line: 230, ip: 192.168.1.86:43882, ispacket: 1, this: 0xb5508638,handle input!
+file: src/HT_SockHandler.cpp, line: 239, ip: 192.168.1.86:43882, this: 0xb5508638, is close
+file: src/HT_SockHandler.cpp, line: 526, ip: 192.168.1.86:43882, this: 0xb5508638, update reactor handler success to disablereading
+file: src/HT_SockHandler.cpp, line: 456 ,ip: 192.168.1.86:43882, this: 0xb5508638, Direct call hanle_close! 
+file: src/HT_SockHandler.cpp, line: 423, ip: 192.168.1.86:43882, this: 0xb5508638, handle_close is called!
+file: src/HT_SockHandler.cpp, line: 70, ip: 192.168.1.86:43882, this:0xb5508638, socket closed, inbuffer size: 0, outbuffer size: 0 

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="log_server" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/log_server" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+					<Add option="`mysql_config --cflags`" />
+				</Compiler>
+				<Linker>
+					<Add option="`mysql_config --libs`" />
+					<Add library="/usr/lib/libHt/libhtnet.so" />
+					<Add library="/usr/lib/libHt/libmysqlclient.so.16" />
+				</Linker>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/log_server" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+			<Add option="-fexceptions" />
+		</Compiler>
+		<Unit filename="Define.h" />
+		<Unit filename="Protocol.h" />
+		<Unit filename="Share_Data.h" />
+		<Unit filename="USERDEVDATA.cpp" />
+		<Unit filename="USERDEVDATA.h" />
+		<Unit filename="include/Define_log.h" />
+		<Unit filename="include/log_db.h" />
+		<Unit filename="include/log_define.h" />
+		<Unit filename="include/log_hub.h" />
+		<Unit filename="include/toolfuncdefine.h" />
+		<Unit filename="main.cpp" />
+		<Unit filename="netlib/HT_NET_Engine.h" />
+		<Unit filename="src/callBack.cpp" />
+		<Unit filename="src/log_db.cpp" />
+		<Unit filename="src/log_hub.cpp" />
+		<Extensions>
+			<code_completion />
+			<debugger />
+			<envvars />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>

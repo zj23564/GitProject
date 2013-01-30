@@ -1,0 +1,260 @@
+# depslib dependency file v1.0
+1341908530 source:/home/xiaoz/Documents/log_server/main.cpp
+	<iostream>
+	<stdio.h>
+	<string.h>
+	<memory.h>
+	<stdlib.h>
+	"log_define.h"
+	"log_db.h"
+	"netlib/server_Define.h"
+
+1341912990 /home/xiaoz/Documents/log_server/log_define.h
+
+1341904914 /home/xiaoz/Documents/log_server/log_db.h
+
+1341899432 /home/xiaoz/Documents/log_server/netlib/server_Define.h
+
+1341912975 source:/home/xiaoz/Documents/log_server/log_db.cpp
+	"log_db.h"
+	"log_define.h"
+	"/usr/include/mysql/mysql.h"
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<pthread.h>
+	<queue>
+	"log_define.h"
+	"netlib/server_Define.h"
+
+1342805883 /usr/include/mysql/mysql.h
+	<standards.h>
+	<sys/types.h>
+	<winsock2.h>
+	"mysql_version.h"
+	"mysql_com.h"
+	"mysql_time.h"
+	"my_list.h"
+	"typelib.h"
+	"my_alloc.h"
+
+1342806988 /usr/include/mysql/mysql_version.h
+	<custom_conf.h>
+
+1342805883 /usr/include/mysql/mysql_com.h
+
+1342805883 /usr/include/mysql/mysql_time.h
+
+1342805883 /usr/include/mysql/my_list.h
+
+1342805883 /usr/include/mysql/typelib.h
+	"my_alloc.h"
+
+1342805883 /usr/include/mysql/my_alloc.h
+
+1343625406 source:/home/xiaoz/2010work/log_server/log_db.cpp
+	"log_db.h"
+	"log_define.h"
+	"/usr/include/mysql/mysql.h"
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<pthread.h>
+	<queue>
+	"log_define.h"
+	"netlib/server_Define.h"
+
+1341915312 /home/xiaoz/2010work/log_server/log_db.h
+
+1343799485 /home/xiaoz/2010work/log_server/log_define.h
+
+1341899432 /home/xiaoz/2010work/log_server/netlib/server_Define.h
+
+1341975255 source:/home/xiaoz/2010work/log_server/main.cpp
+	<iostream>
+	<stdio.h>
+	<string.h>
+	<memory.h>
+	<stdlib.h>
+	"log_define.h"
+	"log_db.h"
+	"netlib/server_Define.h"
+
+1343799948 source:/home/xiaoz/2010work/log_server/log_hub.cpp
+	"log_hub.h"
+	"include/Define.h"
+	"include/Protocol.h"
+	"pthread.h"
+	"netlib/server_Define.h"
+	<stdio.h>
+	<stdlib.h>
+	<assert.h>
+	<time.h>
+	<string.h>
+
+1343799092 /home/xiaoz/2010work/log_server/log_hub.h
+	"log_define.h"
+
+1343617869 /home/xiaoz/2010work/log_server/include/Define.h
+
+1343615497 /home/xiaoz/2010work/log_server/include/Protocol.h
+	"Protocol.h"
+
+1345534413 source:/home/xiaoz/workcode/log_server/log_hub.cpp
+	"log_hub.h"
+	"include/Define.h"
+	"include/Protocol.h"
+	"pthread.h"
+	"netlib/server_Define.h"
+	<stdio.h>
+	<stdlib.h>
+	<assert.h>
+	<time.h>
+	<string.h>
+
+1345534412 /home/xiaoz/workcode/log_server/log_hub.h
+	"log_define.h"
+
+1345534412 /home/xiaoz/workcode/log_server/log_define.h
+
+1345534412 /home/xiaoz/workcode/log_server/include/Define.h
+
+1345534412 /home/xiaoz/workcode/log_server/include/Protocol.h
+	"Protocol.h"
+
+1345534412 /home/xiaoz/workcode/log_server/netlib/server_Define.h
+
+1346829216 source:/home/xiaoz/workcode/log_server/log_db.cpp
+	"log_db.h"
+	"log_define.h"
+	"/usr/include/mysql/mysql.h"
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<pthread.h>
+	<queue>
+	"log_define.h"
+	"netlib/server_Define.h"
+
+1345534413 /home/xiaoz/workcode/log_server/log_db.h
+
+1346825629 source:/home/xiaoz/workcode/log_server/main.cpp
+	<iostream>
+	<stdio.h>
+	<string.h>
+	<memory.h>
+	<stdlib.h>
+	"log_define.h"
+	"log_db.h"
+	"log_hub.h"
+	"netlib/server_Define.h"
+	"include/Define.h"
+	"include/Protocol.h"
+	"netlib/client_Define.h"
+
+1345534412 /home/xiaoz/workcode/log_server/netlib/client_Define.h
+
+1355982214 source:/home/my_project/log_server/main.cpp
+	<iostream>
+	<stdio.h>
+	<string.h>
+	<memory.h>
+	<stdlib.h>
+	<pthread.h>
+	"include/log_define.h"
+	"include/log_db.h"
+	"include/log_hub.h"
+	"Define.h"
+	"Protocol.h"
+	"include/toolfuncdefine.h"
+	"include/log_db.h"
+	<semaphore.h>
+	"USERDEVDATA.h"
+
+1353378483 /home/my_project/log_server/include/log_define.h
+
+1355900663 /home/my_project/log_server/include/log_db.h
+	"log_define.h"
+	<iostream>
+	<string>
+	<sstream>
+	"../netlib/HT_NET_Engine.h"
+
+1353305727 /home/my_project/log_server/include/log_hub.h
+
+1355195256 /home/my_project/log_server/Define.h
+
+1352861285 /home/my_project/log_server/Protocol.h
+	"Protocol.h"
+
+1355900663 /home/my_project/log_server/include/toolfuncdefine.h
+	"../netlib/HT_NET_Engine.h"
+
+1351922752 /home/my_project/log_server/netlib/HT_NET_Engine.h
+
+1355900662 source:/home/my_project/log_server/src/callBack.cpp
+	"../Protocol.h"
+	"../Define.h"
+	"../include/log_define.h"
+	"../netlib/HT_NET_Engine.h"
+	<stdio.h>
+	<queue>
+	<semaphore.h>
+	<pthread.h>
+
+1356760618 source:/home/my_project/log_server/src/log_db.cpp
+	"../include/log_define.h"
+	"mysql.h"
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<pthread.h>
+	<semaphore.h>
+	<queue>
+	<vector>
+	"../Protocol.h"
+	"../Define.h"
+	"../include/log_define.h"
+	"../netlib/HT_NET_Engine.h"
+	"../USERDEVDATA.h"
+	"../include/log_db.h"
+	<sys/socket.h>
+	<sys/ioctl.h>
+	<netinet/in.h>
+	<net/if.h>
+	<net/if_arp.h>
+	<arpa/inet.h>
+
+1355997304 source:/home/my_project/log_server/src/log_hub.cpp
+	"../Define.h"
+	"../Protocol.h"
+	"pthread.h"
+	<stdio.h>
+	<stdlib.h>
+	<assert.h>
+	<time.h>
+	<string.h>
+	<semaphore.h>
+	<queue>
+	"../include/log_define.h"
+	"../netlib/HT_NET_Engine.h"
+	"../USERDEVDATA.h"
+	"../include/log_hub.h"
+	<vector>
+	<pthread.h>
+
+1356766507 source:/home/my_project/log_server/USERDEVDATA.cpp
+	"USERDEVDATA.h"
+	"Protocol.h"
+	"Define.h"
+	"mysql.h"
+	"include/log_db.h"
+
+1356766507 /home/my_project/log_server/USERDEVDATA.h
+	<map>
+	"Share_Data.h"
+	"netlib/HT_NET_Engine.h"
+	"include/log_define.h"
+
+1355900663 /home/my_project/log_server/Share_Data.h
+

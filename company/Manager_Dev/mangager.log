@@ -1,0 +1,267 @@
+file: src/HT_NetModule.cpp, line: 55, NET_Module Start initialization!
+The NET_Module compilation time: Nov 26 2012, 21:09:47
+The NET_Module start ok!
+file: src/HT_TcpClient.cpp line: 28, connecting ok! 
+file: src/HT_SockHandler.cpp, line: 59, SockHandler point: 0x89ae5f0, new SockHandler!
+file: src/HT_SockHandler.cpp, line: 502, ip: 192.168.1.86:4500, this: 0x89ae5f0, update reactor handler enableReading success
+file: src/HT_NetModule.cpp, line: 30, reactor_event_loop thredid:(3033742224) start!
+file: src/HT_NetModule.cpp, line: 30, reactor_event_loop thredid:(3023252368) start!
+file: src/HT_NetModule.cpp, line: 30, reactor_event_loop thredid:(3012762512) start!
+file: src/HT_NetModule.cpp, line: 55, NET_Module Start initialization!
+The NET_Module compilation time: Nov 26 2012, 21:09:47
+file: src/HT_NetModule.cpp, line: 30, reactor_event_loop thredid:(2949823376) start!
+file: src/HT_NetModule.cpp, line: 30, reactor_event_loop thredid:(2939333520) start!
+file: src/HT_NetModule.cpp, line: 30, reactor_event_loop thredid:(2928843664) start!
+file: src/HT_NetModule.cpp, line: 30, reactor_event_loop thredid:(2918353808) start!
+file: src/HT_NetModule.cpp, line: 30, reactor_event_loop thredid:(2907863952) start!
+The NET_Module start ok!
+file: src/HT_TcpServer.cpp, line: 13, port: 3250, ispacket: 1, server started!
+file: src/HT_NetModule.cpp, line: 30, reactor_event_loop thredid:(2897374096) start!
+file: src/HT_NetModule.cpp, line: 30, reactor_event_loop thredid:(2886884240) start!
+file: src/HT_NetModule.cpp, line: 30, reactor_event_loop thredid:(2876394384) start!
+file: src/HT_TcpServer.cpp, line: 13, port: 3300, ispacket: 0, server started!
+file: src/HT_SockHandler.cpp, line: 59, SockHandler point: 0x8a202e0, new SockHandler!
+file:src/HT_TcpServer.cpp, line: 72, port: 3250, ispacket: 1, server accept new connections!
+file: src/HT_SockHandler.cpp, line: 502, ip: 192.168.1.223:3145, this: 0x8a202e0, update reactor handler enableReading success
+file: src/HT_SockHandler.cpp, line: 230, ip: 192.168.1.223:3145, ispacket: 1, this: 0x8a202e0,handle input!
+file: src/HT_SockHandler.cpp, line: 283, ip: 192.168.1.223:3145, this: 0x8a202e0, call readCallback_ ,input_buffer_.length: 32, packlen: 32,rd: 0x8a203dc, wd: 0x8a203fc
+file: src/HT_SockHandler.cpp, line: 308, ip: 192.168.1.223:3145, this: 0x8a202e0, recv data nRecvLen = 36, input_buffer.length: 0
+file: src/HT_SockHandler.cpp, line: 102, ip: 192.168.1.223:3145, this: 0x8a202e0, putq size = 1732, state = 2!
+file: src/HT_SockHandler.cpp, line: 489, ip: 192.168.1.223:3145, this: 0x8a202e0, update reactor handler success to writing
+file: src/HT_SockHandler.cpp, line: 146, ip: 192.168.1.223:3145, this: 0x8a202e0, output_queue_ enqueue_tail success, size: 1736!
+file: src/HT_SockHandler.cpp, line: 317, ip: 192.168.1.223:3145, this: 0x8a202e0, handle output!
+file: src/HT_SockHandler.cpp, line: 355, ip: 192.168.1.223:3145, this: 0x8a202e0, send data to peer!, m_SendSize: 1736
+file: src/HT_SockHandler.cpp, line: 514, ip: 192.168.1.223:3145, this: 0x8a202e0, update reactor handler success to disablewriting
+file: src/HT_SockHandler.cpp, line: 339, ip: 192.168.1.223:3145, this: 0x8a202e0, queue is empty!
+file: src/HT_SockHandler.cpp, line: 230, ip: 192.168.1.223:3145, ispacket: 1, this: 0x8a202e0,handle input!
+file: src/HT_SockHandler.cpp, line: 252, ip: 192.168.1.223:3145, this: 0x8a202e0, recv data failed, errno = 104, error info: Connection reset by peer
+file: src/HT_SockHandler.cpp, line: 539, ip: 192.168.1.223:3145, this: 0x8a202e0, update reactor handler success to disableAll
+file: src/HT_SockHandler.cpp, line: 59, SockHandler point: 0x8a24518, new SockHandler!
+file:src/HT_TcpServer.cpp, line: 72, port: 3250, ispacket: 1, server accept new connections!
+file: src/HT_SockHandler.cpp, line: 502, ip: 192.168.1.223:3152, this: 0x8a24518, update reactor handler enableReading success
+file: src/HT_SockHandler.cpp, line: 230, ip: 192.168.1.223:3152, ispacket: 1, this: 0x8a24518,handle input!
+file: src/HT_SockHandler.cpp, line: 283, ip: 192.168.1.223:3152, this: 0x8a24518, call readCallback_ ,input_buffer_.length: 32, packlen: 32,rd: 0x8a26c5c, wd: 0x8a26c7c
+file: src/HT_SockHandler.cpp, line: 102, ip: 192.168.1.223:3152, this: 0x8a24518, putq size = 1732, state = 2!
+file: src/HT_SockHandler.cpp, line: 489, ip: 192.168.1.223:3152, this: 0x8a24518, update reactor handler success to writing
+file: src/HT_SockHandler.cpp, line: 146, ip: 192.168.1.223:3152, this: 0x8a24518, output_queue_ enqueue_tail success, size: 1736!
+file: src/HT_SockHandler.cpp, line: 308, ip: 192.168.1.223:3152, this: 0x8a24518, recv data nRecvLen = 36, input_buffer.length: 0
+file: src/HT_SockHandler.cpp, line: 317, ip: 192.168.1.223:3152, this: 0x8a24518, handle output!
+file: src/HT_SockHandler.cpp, line: 355, ip: 192.168.1.223:3152, this: 0x8a24518, send data to peer!, m_SendSize: 1736
+file: src/HT_SockHandler.cpp, line: 514, ip: 192.168.1.223:3152, this: 0x8a24518, update reactor handler success to disablewriting
+file: src/HT_SockHandler.cpp, line: 339, ip: 192.168.1.223:3152, this: 0x8a24518, queue is empty!
+file: src/HT_SockHandler.cpp, line: 230, ip: 192.168.1.223:3152, ispacket: 1, this: 0x8a24518,handle input!
+file: src/HT_SockHandler.cpp, line: 252, ip: 192.168.1.223:3152, this: 0x8a24518, recv data failed, errno = 104, error info: Connection reset by peer
+file: src/HT_SockHandler.cpp, line: 539, ip: 192.168.1.223:3152, this: 0x8a24518, update reactor handler success to disableAll
+file: src/HT_SockHandler.cpp, line: 59, SockHandler point: 0x8a24728, new SockHandler!
+file:src/HT_TcpServer.cpp, line: 72, port: 3250, ispacket: 1, server accept new connections!
+file: src/HT_SockHandler.cpp, line: 502, ip: 192.168.1.223:3160, this: 0x8a24728, update reactor handler enableReading success
+file: src/HT_SockHandler.cpp, line: 230, ip: 192.168.1.223:3160, ispacket: 1, this: 0x8a24728,handle input!
+file: src/HT_SockHandler.cpp, line: 283, ip: 192.168.1.223:3160, this: 0x8a24728, call readCallback_ ,input_buffer_.length: 32, packlen: 32,rd: 0x8a2d384, wd: 0x8a2d3a4
+file: src/HT_SockHandler.cpp, line: 308, ip: 192.168.1.223:3160, this: 0x8a24728, recv data nRecvLen = 36, input_buffer.length: 0
+file: src/HT_SockHandler.cpp, line: 102, ip: 192.168.1.223:3160, this: 0x8a24728, putq size = 1732, state = 2!
+file: src/HT_SockHandler.cpp, line: 489, ip: 192.168.1.223:3160, this: 0x8a24728, update reactor handler success to writing
+file: src/HT_SockHandler.cpp, line: 146, ip: 192.168.1.223:3160, this: 0x8a24728, output_queue_ enqueue_tail success, size: 1736!
+file: src/HT_SockHandler.cpp, line: 317, ip: 192.168.1.223:3160, this: 0x8a24728, handle output!
+file: src/HT_SockHandler.cpp, line: 355, ip: 192.168.1.223:3160, this: 0x8a24728, send data to peer!, m_SendSize: 1736
+file: src/HT_SockHandler.cpp, line: 514, ip: 192.168.1.223:3160, this: 0x8a24728, update reactor handler success to disablewriting
+file: src/HT_SockHandler.cpp, line: 339, ip: 192.168.1.223:3160, this: 0x8a24728, queue is empty!
+file: src/HT_SockHandler.cpp, line: 230, ip: 192.168.1.223:3160, ispacket: 1, this: 0x8a24728,handle input!
+file: src/HT_SockHandler.cpp, line: 252, ip: 192.168.1.223:3160, this: 0x8a24728, recv data failed, errno = 104, error info: Connection reset by peer
+file: src/HT_SockHandler.cpp, line: 539, ip: 192.168.1.223:3160, this: 0x8a24728, update reactor handler success to disableAll
+file: src/HT_SockHandler.cpp, line: 59, SockHandler point: 0x8a24938, new SockHandler!
+file:src/HT_TcpServer.cpp, line: 72, port: 3250, ispacket: 1, server accept new connections!
+file: src/HT_SockHandler.cpp, line: 502, ip: 192.168.1.223:3165, this: 0x8a24938, update reactor handler enableReading success
+file: src/HT_SockHandler.cpp, line: 230, ip: 192.168.1.223:3165, ispacket: 1, this: 0x8a24938,handle input!
+file: src/HT_SockHandler.cpp, line: 283, ip: 192.168.1.223:3165, this: 0x8a24938, call readCallback_ ,input_buffer_.length: 32, packlen: 32,rd: 0x8a333e4, wd: 0x8a33404
+file: src/HT_SockHandler.cpp, line: 308, ip: 192.168.1.223:3165, this: 0x8a24938, recv data nRecvLen = 36, input_buffer.length: 0
+CallBack Set Done
+error number is 7
+pyd---NET_DVR_GetDVRConfig NET_DVR_GET_COMPRESSCFG_V30 error.
+sys event
+connect event
+init timer
+timer set OK
+ip is 192.168.1.86
+count device is 5
+get dev blocks OK
+get dev group blocks OK
+get power blocks OK
+get monitor blocks OK
+get user blocks OK
+run device register
+in global scanf time
+Device is of all normal
+in global scanf time
+Device is of all normal
+in global scanf time
+Device is of all normal
+sys event
+connect event
+get data   buff len  is  32  >>>>>>>>>>   nn = 1
+packType is    ___________  50a
+package size is 1732
+count dev_group is 3
+count dev is 5
+count channel is 7
+size of HEAD is 32  size of MSSINFO is 20
+channel.name is >>>> channel1 
+channel.ID is >>>> 100001 
+channel.PID is >>>> 10001 
+channel.name is >>>> channel2 
+channel.ID is >>>> 100002 
+channel.PID is >>>> 10001 
+channel.name is >>>> channel3 
+channel.ID is >>>> 100003 
+channel.PID is >>>> 10001 
+channel.name is >>>> channel4 
+channel.ID is >>>> 100004 
+channel.PID is >>>> 10001 
+channel.name is >>>> channel1 
+channel.ID is >>>> 100037 
+channel.PID is >>>> 10004 
+channel.name is >>>> channel1 
+channel.ID is >>>> 100038 
+channel.PID is >>>> 10005 
+channel.name is >>>> channel1 
+channel.ID is >>>> 100039 
+channel.PID is >>>> 10006 
+send dev tree data
+delete qdata
+send data len is 1732
+Recycling
+sys event
+write complete
+in global scanf time
+Device is of all normal
+in global scanf time
+Device is of all normal
+in global scanf time
+Device is of all normal
+sys event
+recv error
+sys event
+connect event
+get data   buff len  is  32  >>>>>>>>>>   nn = 2
+packType is    ___________  50a
+package size is 1732
+count dev_group is 3
+count dev is 5
+count channel is 7
+size of HEAD is 32  size of MSSINFO is 20
+channel.name is >>>> channel1 
+channel.ID is >>>> 100001 
+channel.PID is >>>> 10001 
+channel.name is >>>> channel2 
+channel.ID is >>>> 100002 
+channel.PID is >>>> 10001 
+channel.name is >>>> channel3 
+channel.ID is >>>> 100003 
+channel.PID is >>>> 10001 
+channel.name is >>>> channel4 
+channel.ID is >>>> 100004 
+channel.PID is >>>> 10001 
+channel.name is >>>> channel1 
+channel.ID is >>>> 100037 
+channel.PID is >>>> 10004 
+channel.name is >>>> channel1 
+channel.ID is >>>> 100038 
+channel.PID is >>>> 10005 
+channel.name is >>>> channel1 
+channel.ID is >>>> 100039 
+channel.PID is >>>> 10006 
+send dev tree data
+delete qdata
+send data len is 1732
+Recycling
+sys event
+write complete
+in global scanf time
+Device is of all normal
+sys event
+recv error
+sys event
+connect event
+get data   buff len  is  32  >>>>>>>>>>   nn = 3
+packType is    ___________  50a
+package size is 1732
+count dev_group is 3
+count dev is 5
+count channel is 7
+size of HEAD is 32  size of MSSINFO is 20
+channel.name is >>>> channel1 
+channel.ID is >>>> 100001 
+channel.PID is >>>> 10001 
+channel.name is >>>> channel2 
+channel.ID is >>>> 100002 
+channel.PID is >>>> 10001 
+channel.name is >>>> channel3 
+channel.ID is >>>> 100003 
+channel.PID is >>>> 10001 
+channel.name is >>>> channel4 
+channel.ID is >>>> 100004 
+channel.PID is >>>> 10001 
+channel.name is >>>> channel1 
+channel.ID is >>>> 100037 
+channel.PID is >>>> 10004 
+channel.name is >>>> channel1 
+channel.ID is >>>> 100038 
+channel.PID is >>>> 10005 
+channel.name is >>>> channel1 
+channel.ID is >>>> 100039 
+channel.PID is >>>> 10006 
+send dev tree data
+delete qdata
+send data len is 1732
+Recycling
+sys event
+write complete
+in global scanf time
+Device is of all normal
+sys event
+recv error
+sys event
+connect event
+get data   buff len  is  32  >>>>>>>>>>   nn = 4
+packType is    ___________  50a
+package size is 1732
+count dev_group is 3
+count dev is 5
+count channel is 7
+size of HEAD is 32  size of MSSINFO is 20
+channel.name is >>>> channel1 
+channel.ID is >>>> 100001 
+channel.PID is >>>> 10001 
+channel.name is >>>> channel2 
+channel.ID is >>>> 100002 
+channel.PID is >>>> 10001 
+channel.name is >>>> channel3 
+channel.ID is >>>> 100003 
+channel.PID is >>>> 10001 
+channel.name is >>>> channel4 
+channel.ID is >>>> 100004 
+channel.PID is >>>> 10001 
+channel.name is >>>> channel1 
+channel.ID is >>>> 100037 
+channel.PID is >>>> 10004file: src/HT_SockHandler.cpp, line: 102, ip: 192.168.1.223:3165, this: 0x8a24938, putq size = 1732, state = 2!
+file: src/HT_SockHandler.cpp, line: 489, ip: 192.168.1.223:3165, this: 0x8a24938, update reactor handler success to writing
+file: src/HT_SockHandler.cpp, line: 146, ip: 192.168.1.223:3165, this: 0x8a24938, output_queue_ enqueue_tail success, size: 1736!
+file: src/HT_SockHandler.cpp, line: 317, ip: 192.168.1.223:3165, this: 0x8a24938, handle output!
+file: src/HT_SockHandler.cpp, line: 355, ip: 192.168.1.223:3165, this: 0x8a24938, send data to peer!, m_SendSize: 1736
+file: src/HT_SockHandler.cpp, line: 514, ip: 192.168.1.223:3165, this: 0x8a24938, update reactor handler success to disablewriting
+file: src/HT_SockHandler.cpp, line: 339, ip: 192.168.1.223:3165, this: 0x8a24938, queue is empty!
+file: src/HT_SockHandler.cpp, line: 230, ip: 192.168.1.223:3165, ispacket: 1, this: 0x8a24938,handle input!
+file: src/HT_SockHandler.cpp, line: 252, ip: 192.168.1.223:3165, this: 0x8a24938, recv data failed, errno = 104, error info: Connection reset by peer
+file: src/HT_SockHandler.cpp, line: 539, ip: 192.168.1.223:3165, this: 0x8a24938, update reactor handler success to disableAll
+file: src/HT_SockHandler.cpp, line: 59, SockHandler point: 0x8a2ac60, new SockHandler!
+file:src/HT_TcpServer.cpp, line: 72, port: 3250, ispacket: 1, server accept new connections!
+file: src/HT_SockHandler.cpp, line: 502, ip: 192.168.1.223:3178, this: 0x8a2ac60, update reactor handler enableReading success
+file: src/HT_SockHandler.cpp, line: 230, ip: 192.168.1.223:3178, ispacket: 1, this: 0x8a2ac60,handle input!
+file: src/HT_SockHandler.cpp, line: 283, ip: 192.168.1.223:3178, this: 0x8a2ac60, call readCallback_ ,input_buffer_.length: 32, packlen: 32,rd: 0x8a39444, wd: 0x8a39464
+file: src/HT_SockHandler.cpp, line: 308, ip: 192.168.1.223:3178, this: 0x8a2ac60, recv data nRecvLen = 36, input_buffer.length: 0
+file: src/HT_SockHandler.cpp, line: 102, ip: 192.168.1.223:3178, this: 0x8a2ac60, putq size = 1732, state = 2!
+file: src/HT_SockHandler.cpp, line: 489, ip: 192.168.1.223:3178, this: 0x8a2ac60, update reactor handler success to writing
+file: src/HT_SockHandler.cpp, line: 146, ip: 192.168.1.223:3178, this: 0x8a2ac60, output_queue_ enqueue_tail success, size: 1736!
+file: src/HT_SockHandler.cpp, line: 317, ip: 192.168.1.223:3178, this: 0x8a2ac60, handle output!
+file: src/HT_SockHandler.cpp, line: 355, ip: 192.168.1.223:3178, this: 0x8a2ac60, send data to peer!, m_SendSize: 1736
+file: src/HT_SockHandler.cpp, line: 514, ip: 192.168.1.223:3178, this: 0x8a2ac60, update reactor handler success to disablewriting
+file: src/HT_SockHandler.cpp, line: 339, ip: 192.168.1.223:3178, this: 0x8a2ac60, queue is empty!

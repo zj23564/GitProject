@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="New_PowerManger" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/New_PowerManger" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Option use_console_runner="0" />
+				<Option projectLinkerOptionsRelation="2" />
+				<Compiler>
+					<Add option="-g" />
+					<Add option="-fexec-charset=GBK" />
+					<Add option="-D__WXDEBUG__" />
+					<Add directory="$(#wx)/lib/gcc_dll/mswud" />
+				</Compiler>
+				<ResourceCompiler>
+					<Add directory="$(#wx)/lib/gcc_dll/mswud" />
+				</ResourceCompiler>
+				<Linker>
+					<Add library="libwxmsw29ud_core.a" />
+					<Add library="libwxbase29ud.a" />
+					<Add library="libwxpngd.a" />
+					<Add library="libwxzlibd.a" />
+					<Add library="libwxmsw29ud_adv.a" />
+					<Add library=".\net_engine.lib" />
+					<Add directory="$(#wx)/lib/gcc_dll" />
+				</Linker>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/New_PowerManger" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="0" />
+				<Option compiler="gcc" />
+				<Option projectLinkerOptionsRelation="2" />
+				<Compiler>
+					<Add option="-O2" />
+					<Add option="-fexec-charset=GBK" />
+					<Add directory="$(#wx)/lib/gcc_dll/mswud" />
+				</Compiler>
+				<ResourceCompiler>
+					<Add directory="$(#wx)/lib/gcc_dll/mswud" />
+				</ResourceCompiler>
+				<Linker>
+					<Add option="-s" />
+					<Add library="libwxmsw29u_core.a" />
+					<Add library="libwxbase29u.a" />
+					<Add library="libwxmsw29u_adv.a" />
+					<Add library=".\net_engine.lib" />
+					<Add directory="$(#wx)/lib/gcc_dll" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+			<Add option="-pipe" />
+			<Add option="-mthreads" />
+			<Add option='[[if (PLATFORM == PLATFORM_MSW &amp;&amp; (GetCompilerFactory().GetCompilerVersionString(_T(&quot;gcc&quot;)) &gt;= _T(&quot;4.0.0&quot;))) print(_T(&quot;-Wno-attributes&quot;));]]' />
+			<Add option="-D__GNUWIN32__" />
+			<Add option="-D__WXMSW__" />
+			<Add option="-DwxUSE_UNICODE" />
+			<Add directory="$(#wx)/include" />
+			<Add directory="$(#wx)/contrib/include" />
+		</Compiler>
+		<ResourceCompiler>
+			<Add directory="$(#wx)/include" />
+		</ResourceCompiler>
+		<Linker>
+			<Add option="-mthreads" />
+			<Add library="libkernel32.a" />
+			<Add library="libuser32.a" />
+			<Add library="libgdi32.a" />
+			<Add library="libwinspool.a" />
+			<Add library="libcomdlg32.a" />
+			<Add library="libadvapi32.a" />
+			<Add library="libshell32.a" />
+			<Add library="libole32.a" />
+			<Add library="liboleaut32.a" />
+			<Add library="libuuid.a" />
+			<Add library="libcomctl32.a" />
+			<Add library="libwsock32.a" />
+			<Add library="libodbc32.a" />
+		</Linker>
+		<Unit filename="AddCenterNodeDialog.cpp" />
+		<Unit filename="AddCenterNodeDialog.h" />
+		<Unit filename="AddChannelDialog.cpp" />
+		<Unit filename="AddChannelDialog.h" />
+		<Unit filename="New_PowerMangerApp.cpp" />
+		<Unit filename="New_PowerMangerApp.h" />
+		<Unit filename="New_PowerMangerMain.cpp" />
+		<Unit filename="New_PowerMangerMain.h" />
+		<Unit filename="include/GlobalFunc.h" />
+		<Unit filename="include/LoginDialog.h" />
+		<Unit filename="include/Tree/CGreatTree.h" />
+		<Unit filename="include/data/Define_Data.h" />
+		<Unit filename="include/data/Protocol.h" />
+		<Unit filename="include/data/sys_data.h" />
+		<Unit filename="include/define/Define.h" />
+		<Unit filename="include/define/Define_Page.h" />
+		<Unit filename="include/encode_conv/Ecode_Conv.h" />
+		<Unit filename="include/net/HT_NET_Engine.h" />
+		<Unit filename="include/version.h" />
+		<Unit filename="resource.rc">
+			<Option compilerVar="WINDRES" />
+		</Unit>
+		<Unit filename="src/GlobalFunc.cpp" />
+		<Unit filename="src/Gui Function/devFunction.cpp" />
+		<Unit filename="src/Gui Function/toolFunction.cpp" />
+		<Unit filename="src/Gui Function/userFunction.cpp" />
+		<Unit filename="src/LoginDialog.cpp" />
+		<Unit filename="src/Tree/CGreatTree.cpp" />
+		<Unit filename="src/encode_conv/Ecode_Conv.cpp" />
+		<Unit filename="src/event/MenuEventFunc.cpp" />
+		<Unit filename="src/event/New_PowerMangerDevTreeEventFunc.cpp" />
+		<Unit filename="src/event/New_PowerMangerEventFunc.cpp" />
+		<Unit filename="src/event/New_PowerMangerTreeEventFunc.cpp" />
+		<Unit filename="src/event/New_PowerMangerUserTreeEventFunc.cpp" />
+		<Unit filename="src/sys_data.cpp" />
+		<Unit filename="wxsmith/New_PowerMangerframe.wxs" />
+		<Extensions>
+			<envvars />
+			<code_completion />
+			<lib_finder disable_auto="1" />
+			<debugger />
+			<wxsmith version="1">
+				<gui name="wxWidgets" src="New_PowerMangerApp.cpp" main="New_PowerMangerFrame" init_handlers="necessary" language="CPP" />
+				<resources>
+					<wxFrame wxs="wxsmith/New_PowerMangerframe.wxs" src="New_PowerMangerMain.cpp" hdr="New_PowerMangerMain.h" fwddecl="0" i18n="1" name="New_PowerMangerFrame" language="CPP" />
+					<wxDialog wxs="wxsmith/LoginDialog.wxs" src="LoginDialog.cpp" hdr="LoginDialog.h" fwddecl="0" i18n="1" name="LoginDialog" language="CPP" />
+					<wxDialog wxs="wxsmith/AddCenterNodeDialog.wxs" src="AddCenterNodeDialog.cpp" hdr="AddCenterNodeDialog.h" fwddecl="0" i18n="1" name="AddCenterNodeDialog" language="CPP" />
+					<wxDialog wxs="wxsmith/AddChannelDialog.wxs" src="AddChannelDialog.cpp" hdr="AddChannelDialog.h" fwddecl="0" i18n="1" name="AddChannelDialog" language="CPP" />
+				</resources>
+			</wxsmith>
+			<AutoVersioning>
+				<Scheme minor_max="10" build_max="0" rev_max="0" rev_rand_max="10" build_times_to_increment_minor="100" />
+				<Settings autoincrement="1" date_declarations="1" update_manifest="1" do_auto_increment="0" ask_to_increment="0" language="C++" svn="0" svn_directory="" header_path="version.h" />
+				<Changes_Log show_changes_editor="0" app_title="released version %M.%m.%b of %p" changeslog_path="ChangesLog.txt" />
+				<Code header_guard="VERSION_H" namespace="AutoVersion" prefix="" />
+			</AutoVersioning>
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>

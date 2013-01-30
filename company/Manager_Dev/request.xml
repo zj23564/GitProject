@@ -1,0 +1,6 @@
+<iq type='set'>
+  <query xmlns='posacar:signaling:register'>
+    <result>200</result>
+    <userdata></userdata>
+  </query>
+</iq>

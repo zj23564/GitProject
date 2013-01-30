@@ -1,0 +1,7 @@
+<iq type='set'>
+  <query xmlns='posacar:signaling:querylb'>
+    <result>400</result>
+    <address>192.168.3.38</address>
+    <port>3100</port>
+  </query>
+</iq>

@@ -1,0 +1,12 @@
+The NET_Module compilation time: Nov 26 2012, 21:09:47
+file: src/HT_NetModule.cpp, line: 30, reactor_event_loop thredid:(2960210832) start!
+file: src/HT_NetModule.cpp, line: 30, reactor_event_loop thredid:(2949720976) start!
+file: src/HT_NetModule.cpp, line: 30, reactor_event_loop thredid:(2939231120) start!
+file: src/HT_NetModule.cpp, line: 30, reactor_event_loop thredid:(2928741264) start!
+The NET_Module start ok!
+file: src/HT_TcpServer.cpp, line: 13, port: 3250, ispacket: 1, server started!
+file: src/HT_NetModule.cpp, line: 30, reactor_event_loop thredid:(2918251408) start!
+file: src/HT_NetModule.cpp, line: 30, reactor_event_loop thredid:(2907761552) start!
+file: src/HT_NetModule.cpp, line: 30, reactor_event_loop thredid:(2897271696) start!
+file: src/HT_NetModule.cpp, line: 30, reactor_event_loop thredid:(2886781840) start!
+file: src/HT_TcpServer.cpp, line: 13, port: 3300, ispacket: 0, server started!

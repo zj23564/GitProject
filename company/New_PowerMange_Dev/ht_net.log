@@ -1,0 +1,51 @@
+The NET_Module compilation time: Nov  9 2012, 15:30:54
+file: f:\code\net_engine\ht_netmodule.cpp, line: 35, reactor_event_loop thredid:(4380) start!
+file: f:\code\net_engine\ht_netmodule.cpp, line: 35, reactor_event_loop thredid:(3352) start!
+file: f:\code\net_engine\ht_netmodule.cpp, line: 35, reactor_event_loop thredid:(1148) start!
+file: f:\code\net_engine\ht_netmodule.cpp, line: 35, reactor_event_loop thredid:(4556) start!
+file: f:\code\net_engine\ht_netmodule.cpp, line: 35, reactor_event_loop thredid:(4292) start!
+file: f:\code\net_engine\ht_netmodule.cpp, line: 35, reactor_event_loop thredid:(3516) start!
+file: f:\code\net_engine\ht_netmodule.cpp, line: 35, reactor_event_loop thredid:(4512) start!
+file: f:\code\net_engine\ht_netmodule.cpp, line: 35, reactor_event_loop thredid:(2512) start!
+file: f:\code\net_engine\ht_tcpclient.cpp line: 27, connecting ok! 
+file: f:\code\net_engine\ht_sockhandler.cpp, line: 487, ip: 192.168.1.86:3250, update reactor handler enableReading success
+file: f:\code\net_engine\ht_sockhandler.cpp, line: 89, ip: 192.168.1.86:3250, putq size = 32, state = 2!
+file: f:\code\net_engine\ht_sockhandler.cpp, line: 474, ip: 192.168.1.86:3250, update reactor handler success to writing
+file: f:\code\net_engine\ht_sockhandler.cpp, line: 303, ip: 192.168.1.86:3250, handle output!
+file: f:\code\net_engine\ht_sockhandler.cpp, line: 133, ip: 192.168.1.86:3250, output_queue_ enqueue_tail success, size: 36!
+file: f:\code\net_engine\ht_sockhandler.cpp, line: 341, ip: 192.168.1.86:3250, send data to peer!, m_SendSize: 36
+file: f:\code\net_engine\ht_sockhandler.cpp, line: 499, ip: 192.168.1.86:3250, update reactor handler success to disablewriting
+file: f:\code\net_engine\ht_sockhandler.cpp, line: 325, ip: 192.168.1.86:3250, queue is empty!
+file: f:\code\net_engine\ht_sockhandler.cpp, line: 217, ip: 192.168.1.86:3250, ispacket: 1, handle input!
+file: f:\code\net_engine\ht_sockhandler.cpp, line: 270, ip: 192.168.1.86:3250, call readCallback_ ,packlen = 4452
+file: f:\code\net_engine\ht_sockhandler.cpp, line: 89, ip: 192.168.1.86:3250, putq size = 32, state = 2!
+file: f:\code\net_engine\ht_sockhandler.cpp, line: 474, ip: 192.168.1.86:3250, update reactor handler success to writing
+file: f:\code\net_engine\ht_sockhandler.cpp, line: 133, ip: 192.168.1.86:3250, output_queue_ enqueue_tail success, size: 36!
+file: f:\code\net_engine\ht_sockhandler.cpp, line: 294, ip: 192.168.1.86:3250, recv data nRecvLen = 4456
+file: f:\code\net_engine\ht_sockhandler.cpp, line: 303, ip: 192.168.1.86:3250, handle output!
+file: f:\code\net_engine\ht_sockhandler.cpp, line: 341, ip: 192.168.1.86:3250, send data to peer!, m_SendSize: 36
+file: f:\code\net_engine\ht_sockhandler.cpp, line: 499, ip: 192.168.1.86:3250, update reactor handler success to disablewriting
+file: f:\code\net_engine\ht_sockhandler.cpp, line: 325, ip: 192.168.1.86:3250, queue is empty!
+file: f:\code\net_engine\ht_sockhandler.cpp, line: 217, ip: 192.168.1.86:3250, ispacket: 1, handle input!
+file: f:\code\net_engine\ht_sockhandler.cpp, line: 270, ip: 192.168.1.86:3250, call readCallback_ ,packlen = 4392
+file: f:\code\net_engine\ht_sockhandler.cpp, line: 89, ip: 192.168.1.86:3250, putq size = 32, state = 2!
+file: f:\code\net_engine\ht_sockhandler.cpp, line: 474, ip: 192.168.1.86:3250, update reactor handler success to writing
+file: f:\code\net_engine\ht_sockhandler.cpp, line: 133, ip: 192.168.1.86:3250, output_queue_ enqueue_tail success, size: 36!
+file: f:\code\net_engine\ht_sockhandler.cpp, line: 294, ip: 192.168.1.86:3250, recv data nRecvLen = 4396
+file: f:\code\net_engine\ht_sockhandler.cpp, line: 303, ip: 192.168.1.86:3250, handle output!
+file: f:\code\net_engine\ht_sockhandler.cpp, line: 341, ip: 192.168.1.86:3250, send data to peer!, m_SendSize: 36
+file: f:\code\net_engine\ht_sockhandler.cpp, line: 499, ip: 192.168.1.86:3250, update reactor handler success to disablewriting
+file: f:\code\net_engine\ht_sockhandler.cpp, line: 325, ip: 192.168.1.86:3250, queue is empty!
+file: f:\code\net_engine\ht_sockhandler.cpp, line: 217, ip: 192.168.1.86:3250, ispacket: 1, handle input!
+file: f:\code\net_engine\ht_sockhandler.cpp, line: 270, ip: 192.168.1.86:3250, call readCallback_ ,packlen = 4372
+file: f:\code\net_engine\ht_sockhandler.cpp, line: 89, ip: 192.168.1.86:3250, putq size = 32, state = 2!
+file: f:\code\net_engine\ht_sockhandler.cpp, line: 474, ip: 192.168.1.86:3250, update reactor handler success to writing
+file: f:\code\net_engine\ht_sockhandler.cpp, line: 133, ip: 192.168.1.86:3250, output_queue_ enqueue_tail success, size: 36!
+file: f:\code\net_engine\ht_sockhandler.cpp, line: 294, ip: 192.168.1.86:3250, recv data nRecvLen = 4376
+file: f:\code\net_engine\ht_sockhandler.cpp, line: 303, ip: 192.168.1.86:3250, handle output!
+file: f:\code\net_engine\ht_sockhandler.cpp, line: 341, ip: 192.168.1.86:3250, send data to peer!, m_SendSize: 36
+file: f:\code\net_engine\ht_sockhandler.cpp, line: 499, ip: 192.168.1.86:3250, update reactor handler success to disablewriting
+file: f:\code\net_engine\ht_sockhandler.cpp, line: 325, ip: 192.168.1.86:3250, queue is empty!
+file: f:\code\net_engine\ht_sockhandler.cpp, line: 217, ip: 192.168.1.86:3250, ispacket: 1, handle input!
+file: f:\code\net_engine\ht_sockhandler.cpp, line: 270, ip: 192.168.1.86:3250, call readCallback_ ,packlen = 252
+file: f:\code\net_engine\ht_sockhandler.cpp, line: 294, ip: 192.168.1.86:3250, recv data nRecvLen = 256

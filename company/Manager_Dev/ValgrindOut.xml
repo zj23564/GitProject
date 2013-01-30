@@ -1,0 +1,1404 @@
+<?xml version="1.0"?>
+
+<valgrindoutput>
+
+<protocolversion>4</protocolversion>
+<protocoltool>memcheck</protocoltool>
+
+<preamble>
+  <line>Memcheck, a memory error detector</line>
+  <line>Copyright (C) 2002-2009, and GNU GPL'd, by Julian Seward et al.</line>
+  <line>Using Valgrind-3.5.0 and LibVEX; rerun with -h for copyright info</line>
+  <line>Command: bin/Debug/Manager </line>
+</preamble>
+
+<pid>5467</pid>
+<ppid>4810</ppid>
+<tool>memcheck</tool>
+
+<args>
+  <vargv>
+    <exe>/usr/bin/valgrind</exe>
+    <arg>--leak-check=yes</arg>
+    <arg>--xml=yes</arg>
+    <arg>--xml-file=ValgrindOut.xml</arg>
+  </vargv>
+  <argv>
+    <exe>bin/Debug/Manager</exe>
+    <arg></arg>
+  </argv>
+</args>
+
+<status>
+  <state>RUNNING</state>
+  <time>00:00:00:01.089 </time>
+</status>
+
+<error>
+  <unique>0x1e</unique>
+  <tid>22</tid>
+  <kind>InvalidFree</kind>
+  <what>Invalid free() / delete / delete[]</what>
+  <stack>
+    <frame>
+      <ip>0x400579D</ip>
+      <obj>/usr/lib/valgrind/vgpreload_memcheck-x86-linux.so</obj>
+      <fn>free</fn>
+      <dir>/builddir/build/BUILD/valgrind-3.5.0/coregrind/m_replacemalloc</dir>
+      <file>vg_replace_malloc.c</file>
+      <line>325</line>
+    </frame>
+    <frame>
+      <ip>0x66BE2D</ip>
+      <obj>/lib/libc-2.5.so</obj>
+    </frame>
+    <frame>
+      <ip>0x66B9A6</ip>
+      <obj>/lib/libc-2.5.so</obj>
+    </frame>
+    <frame>
+      <ip>0x40013B2</ip>
+      <obj>/usr/lib/valgrind/vgpreload_core-x86-linux.so</obj>
+      <fn>_vgnU_freeres</fn>
+      <dir>/builddir/build/BUILD/valgrind-3.5.0/coregrind</dir>
+      <file>vg_preloaded.c</file>
+      <line>62</line>
+    </frame>
+    <frame>
+      <ip>0x706C04</ip>
+      <obj>/lib/libpthread-2.5.so</obj>
+      <fn>pthread_cond_wait@@GLIBC_2.3.2</fn>
+    </frame>
+    <frame>
+      <ip>0x42B51CB</ip>
+      <obj>/home/Build/lib/libACE.so.6.1.0</obj>
+      <fn>ACE_Condition_Thread_Mutex::wait(ACE_Thread_Mutex&amp;, ACE_Time_Value const*)</fn>
+      <dir>/home/download/ACE_wrappers/ace</dir>
+      <file>OS_NS_Thread.inl</file>
+      <line>369</line>
+    </frame>
+    <frame>
+      <ip>0x42B520A</ip>
+      <obj>/home/Build/lib/libACE.so.6.1.0</obj>
+      <fn>ACE_Condition_Thread_Mutex::wait(ACE_Time_Value const*)</fn>
+      <dir>/home/ACE_wrappers/ace</dir>
+      <file>Condition_Thread_Mutex.cpp</file>
+      <line>107</line>
+    </frame>
+    <frame>
+      <ip>0x4329968</ip>
+      <obj>/home/Build/lib/libACE.so.6.1.0</obj>
+      <fn>ACE_Token::shared_acquire(void (*)(void*), void*, ACE_Time_Value*, ACE_Token::ACE_Token_Op_Type)</fn>
+      <dir>/home/download/ACE_wrappers/ace</dir>
+      <file>Token.inl</file>
+      <line>130</line>
+    </frame>
+    <frame>
+      <ip>0x42C620E</ip>
+      <obj>/home/Build/lib/libACE.so.6.1.0</obj>
+      <fn>ACE_Dev_Poll_Reactor::Token_Guard::acquire_quietly(ACE_Time_Value*)</fn>
+      <dir>/home/download/ACE_wrappers/ace</dir>
+      <file>Token.inl</file>
+      <line>91</line>
+    </frame>
+    <frame>
+      <ip>0x42C6F59</ip>
+      <obj>/home/Build/lib/libACE.so.6.1.0</obj>
+      <fn>ACE_Dev_Poll_Reactor::handle_events(ACE_Time_Value*)</fn>
+      <dir>/home/ACE_wrappers/ace</dir>
+      <file>Dev_Poll_Reactor.cpp</file>
+      <line>1010</line>
+    </frame>
+    <frame>
+      <ip>0x430CE06</ip>
+      <obj>/home/Build/lib/libACE.so.6.1.0</obj>
+      <fn>ACE_Reactor::run_reactor_event_loop(int (*)(ACE_Reactor*))</fn>
+      <dir>/home/ACE_wrappers/ace</dir>
+      <file>Reactor.cpp</file>
+      <line>220</line>
+    </frame>
+    <frame>
+      <ip>0x42010D7</ip>
+      <obj>/usr/local/lib/libhtnet.so</obj>
+      <fn>runThreadReactor(void*)</fn>
+      <dir>/root/workcode/ht_net/src</dir>
+      <file>HT_NetModule.cpp</file>
+      <line>30</line>
+    </frame>
+  </stack>
+  <auxwhat>Address 0x420dc50 is not stack'd, malloc'd or (recently) free'd</auxwhat>
+</error>
+
+
+<status>
+  <state>FINISHED</state>
+  <time>00:00:07:33.916 </time>
+</status>
+
+<error>
+  <unique>0x69</unique>
+  <tid>1</tid>
+  <kind>Leak_PossiblyLost</kind>
+  <xwhat>
+    <text>144 bytes in 1 blocks are possibly lost in loss record 75 of 133</text>
+    <leakedbytes>144</leakedbytes>
+    <leakedblocks>1</leakedblocks>
+  </xwhat>
+  <stack>
+    <frame>
+      <ip>0x4004EC2</ip>
+      <obj>/usr/lib/valgrind/vgpreload_memcheck-x86-linux.so</obj>
+      <fn>calloc</fn>
+      <dir>/builddir/build/BUILD/valgrind-3.5.0/coregrind/m_replacemalloc</dir>
+      <file>vg_replace_malloc.c</file>
+      <line>418</line>
+    </frame>
+    <frame>
+      <ip>0x547EC9</ip>
+      <obj>/lib/ld-2.5.so</obj>
+      <fn>_dl_allocate_tls</fn>
+    </frame>
+    <frame>
+      <ip>0x702F66</ip>
+      <obj>/lib/libpthread-2.5.so</obj>
+      <fn>pthread_create@@GLIBC_2.1</fn>
+    </frame>
+    <frame>
+      <ip>0x8063CF7</ip>
+      <obj>/home/my_project/Manager_Dev/bin/Debug/Manager</obj>
+      <fn>main</fn>
+      <dir>/home/my_project/Manager_Dev</dir>
+      <file>main.cpp</file>
+      <line>45</line>
+    </frame>
+  </stack>
+</error>
+
+<error>
+  <unique>0x6a</unique>
+  <tid>1</tid>
+  <kind>Leak_PossiblyLost</kind>
+  <xwhat>
+    <text>144 bytes in 1 blocks are possibly lost in loss record 76 of 133</text>
+    <leakedbytes>144</leakedbytes>
+    <leakedblocks>1</leakedblocks>
+  </xwhat>
+  <stack>
+    <frame>
+      <ip>0x4004EC2</ip>
+      <obj>/usr/lib/valgrind/vgpreload_memcheck-x86-linux.so</obj>
+      <fn>calloc</fn>
+      <dir>/builddir/build/BUILD/valgrind-3.5.0/coregrind/m_replacemalloc</dir>
+      <file>vg_replace_malloc.c</file>
+      <line>418</line>
+    </frame>
+    <frame>
+      <ip>0x547EC9</ip>
+      <obj>/lib/ld-2.5.so</obj>
+      <fn>_dl_allocate_tls</fn>
+    </frame>
+    <frame>
+      <ip>0x702F66</ip>
+      <obj>/lib/libpthread-2.5.so</obj>
+      <fn>pthread_create@@GLIBC_2.1</fn>
+    </frame>
+    <frame>
+      <ip>0x8063D20</ip>
+      <obj>/home/my_project/Manager_Dev/bin/Debug/Manager</obj>
+      <fn>main</fn>
+      <dir>/home/my_project/Manager_Dev</dir>
+      <file>main.cpp</file>
+      <line>46</line>
+    </frame>
+  </stack>
+</error>
+
+<error>
+  <unique>0x6b</unique>
+  <tid>1</tid>
+  <kind>Leak_PossiblyLost</kind>
+  <xwhat>
+    <text>144 bytes in 1 blocks are possibly lost in loss record 77 of 133</text>
+    <leakedbytes>144</leakedbytes>
+    <leakedblocks>1</leakedblocks>
+  </xwhat>
+  <stack>
+    <frame>
+      <ip>0x4004EC2</ip>
+      <obj>/usr/lib/valgrind/vgpreload_memcheck-x86-linux.so</obj>
+      <fn>calloc</fn>
+      <dir>/builddir/build/BUILD/valgrind-3.5.0/coregrind/m_replacemalloc</dir>
+      <file>vg_replace_malloc.c</file>
+      <line>418</line>
+    </frame>
+    <frame>
+      <ip>0x547EC9</ip>
+      <obj>/lib/ld-2.5.so</obj>
+      <fn>_dl_allocate_tls</fn>
+    </frame>
+    <frame>
+      <ip>0x702F66</ip>
+      <obj>/lib/libpthread-2.5.so</obj>
+      <fn>pthread_create@@GLIBC_2.1</fn>
+    </frame>
+    <frame>
+      <ip>0x8063D49</ip>
+      <obj>/home/my_project/Manager_Dev/bin/Debug/Manager</obj>
+      <fn>main</fn>
+      <dir>/home/my_project/Manager_Dev</dir>
+      <file>main.cpp</file>
+      <line>47</line>
+    </frame>
+  </stack>
+</error>
+
+<error>
+  <unique>0x6c</unique>
+  <tid>1</tid>
+  <kind>Leak_PossiblyLost</kind>
+  <xwhat>
+    <text>144 bytes in 1 blocks are possibly lost in loss record 78 of 133</text>
+    <leakedbytes>144</leakedbytes>
+    <leakedblocks>1</leakedblocks>
+  </xwhat>
+  <stack>
+    <frame>
+      <ip>0x4004EC2</ip>
+      <obj>/usr/lib/valgrind/vgpreload_memcheck-x86-linux.so</obj>
+      <fn>calloc</fn>
+      <dir>/builddir/build/BUILD/valgrind-3.5.0/coregrind/m_replacemalloc</dir>
+      <file>vg_replace_malloc.c</file>
+      <line>418</line>
+    </frame>
+    <frame>
+      <ip>0x547EC9</ip>
+      <obj>/lib/ld-2.5.so</obj>
+      <fn>_dl_allocate_tls</fn>
+    </frame>
+    <frame>
+      <ip>0x702F66</ip>
+      <obj>/lib/libpthread-2.5.so</obj>
+      <fn>pthread_create@@GLIBC_2.1</fn>
+    </frame>
+    <frame>
+      <ip>0x8063D72</ip>
+      <obj>/home/my_project/Manager_Dev/bin/Debug/Manager</obj>
+      <fn>main</fn>
+      <dir>/home/my_project/Manager_Dev</dir>
+      <file>main.cpp</file>
+      <line>48</line>
+    </frame>
+  </stack>
+</error>
+
+<error>
+  <unique>0x6d</unique>
+  <tid>1</tid>
+  <kind>Leak_PossiblyLost</kind>
+  <xwhat>
+    <text>144 bytes in 1 blocks are possibly lost in loss record 79 of 133</text>
+    <leakedbytes>144</leakedbytes>
+    <leakedblocks>1</leakedblocks>
+  </xwhat>
+  <stack>
+    <frame>
+      <ip>0x4004EC2</ip>
+      <obj>/usr/lib/valgrind/vgpreload_memcheck-x86-linux.so</obj>
+      <fn>calloc</fn>
+      <dir>/builddir/build/BUILD/valgrind-3.5.0/coregrind/m_replacemalloc</dir>
+      <file>vg_replace_malloc.c</file>
+      <line>418</line>
+    </frame>
+    <frame>
+      <ip>0x547EC9</ip>
+      <obj>/lib/ld-2.5.so</obj>
+      <fn>_dl_allocate_tls</fn>
+    </frame>
+    <frame>
+      <ip>0x702F66</ip>
+      <obj>/lib/libpthread-2.5.so</obj>
+      <fn>pthread_create@@GLIBC_2.1</fn>
+    </frame>
+    <frame>
+      <ip>0x8063D9B</ip>
+      <obj>/home/my_project/Manager_Dev/bin/Debug/Manager</obj>
+      <fn>main</fn>
+      <dir>/home/my_project/Manager_Dev</dir>
+      <file>main.cpp</file>
+      <line>49</line>
+    </frame>
+  </stack>
+</error>
+
+<error>
+  <unique>0x6e</unique>
+  <tid>1</tid>
+  <kind>Leak_PossiblyLost</kind>
+  <xwhat>
+    <text>144 bytes in 1 blocks are possibly lost in loss record 80 of 133</text>
+    <leakedbytes>144</leakedbytes>
+    <leakedblocks>1</leakedblocks>
+  </xwhat>
+  <stack>
+    <frame>
+      <ip>0x4004EC2</ip>
+      <obj>/usr/lib/valgrind/vgpreload_memcheck-x86-linux.so</obj>
+      <fn>calloc</fn>
+      <dir>/builddir/build/BUILD/valgrind-3.5.0/coregrind/m_replacemalloc</dir>
+      <file>vg_replace_malloc.c</file>
+      <line>418</line>
+    </frame>
+    <frame>
+      <ip>0x547EC9</ip>
+      <obj>/lib/ld-2.5.so</obj>
+      <fn>_dl_allocate_tls</fn>
+    </frame>
+    <frame>
+      <ip>0x702F66</ip>
+      <obj>/lib/libpthread-2.5.so</obj>
+      <fn>pthread_create@@GLIBC_2.1</fn>
+    </frame>
+    <frame>
+      <ip>0x8063E55</ip>
+      <obj>/home/my_project/Manager_Dev/bin/Debug/Manager</obj>
+      <fn>main</fn>
+      <dir>/home/my_project/Manager_Dev</dir>
+      <file>main.cpp</file>
+      <line>60</line>
+    </frame>
+  </stack>
+</error>
+
+<error>
+  <unique>0x80</unique>
+  <tid>1</tid>
+  <kind>Leak_PossiblyLost</kind>
+  <xwhat>
+    <text>576 bytes in 4 blocks are possibly lost in loss record 98 of 133</text>
+    <leakedbytes>576</leakedbytes>
+    <leakedblocks>4</leakedblocks>
+  </xwhat>
+  <stack>
+    <frame>
+      <ip>0x4004EC2</ip>
+      <obj>/usr/lib/valgrind/vgpreload_memcheck-x86-linux.so</obj>
+      <fn>calloc</fn>
+      <dir>/builddir/build/BUILD/valgrind-3.5.0/coregrind/m_replacemalloc</dir>
+      <file>vg_replace_malloc.c</file>
+      <line>418</line>
+    </frame>
+    <frame>
+      <ip>0x547EC9</ip>
+      <obj>/lib/ld-2.5.so</obj>
+      <fn>_dl_allocate_tls</fn>
+    </frame>
+    <frame>
+      <ip>0x702F66</ip>
+      <obj>/lib/libpthread-2.5.so</obj>
+      <fn>pthread_create@@GLIBC_2.1</fn>
+    </frame>
+    <frame>
+      <ip>0x805A2FE</ip>
+      <obj>/home/my_project/Manager_Dev/bin/Debug/Manager</obj>
+      <fn>CThread::Start()</fn>
+      <dir>/home/my_project/Manager_Dev</dir>
+      <file>Thread.cpp</file>
+      <line>64</line>
+    </frame>
+    <frame>
+      <ip>0x805BC6C</ip>
+      <obj>/home/my_project/Manager_Dev/bin/Debug/Manager</obj>
+      <fn>CThreadPool::CThreadPool(int)</fn>
+      <dir>/home/my_project/Manager_Dev</dir>
+      <file>ThreadPool.cpp</file>
+      <line>41</line>
+    </frame>
+    <frame>
+      <ip>0x805A917</ip>
+      <obj>/home/my_project/Manager_Dev/bin/Debug/Manager</obj>
+      <fn>CThreadManage::CThreadManage(int)</fn>
+      <dir>/home/my_project/Manager_Dev</dir>
+      <file>ThreadManage.cpp</file>
+      <line>13</line>
+    </frame>
+    <frame>
+      <ip>0x80548E5</ip>
+      <obj>/home/my_project/Manager_Dev/bin/Debug/Manager</obj>
+      <fn>ObjectFactoy::ObjectFactoy()</fn>
+      <dir>/home/my_project/Manager_Dev</dir>
+      <file>ObjectFactoy.cpp</file>
+      <line>50</line>
+    </frame>
+    <frame>
+      <ip>0x8054A0C</ip>
+      <obj>/home/my_project/Manager_Dev/bin/Debug/Manager</obj>
+      <fn>ObjectFactoy::GetFactoryInstance()</fn>
+      <dir>/home/my_project/Manager_Dev</dir>
+      <file>ObjectFactoy.cpp</file>
+      <line>65</line>
+    </frame>
+    <frame>
+      <ip>0x8063B8A</ip>
+      <obj>/home/my_project/Manager_Dev/bin/Debug/Manager</obj>
+      <fn>main</fn>
+      <dir>/home/my_project/Manager_Dev</dir>
+      <file>main.cpp</file>
+      <line>21</line>
+    </frame>
+  </stack>
+</error>
+
+<error>
+  <unique>0x81</unique>
+  <tid>1</tid>
+  <kind>Leak_PossiblyLost</kind>
+  <xwhat>
+    <text>576 bytes in 4 blocks are possibly lost in loss record 99 of 133</text>
+    <leakedbytes>576</leakedbytes>
+    <leakedblocks>4</leakedblocks>
+  </xwhat>
+  <stack>
+    <frame>
+      <ip>0x4004EC2</ip>
+      <obj>/usr/lib/valgrind/vgpreload_memcheck-x86-linux.so</obj>
+      <fn>calloc</fn>
+      <dir>/builddir/build/BUILD/valgrind-3.5.0/coregrind/m_replacemalloc</dir>
+      <file>vg_replace_malloc.c</file>
+      <line>418</line>
+    </frame>
+    <frame>
+      <ip>0x547EC9</ip>
+      <obj>/lib/ld-2.5.so</obj>
+      <fn>_dl_allocate_tls</fn>
+    </frame>
+    <frame>
+      <ip>0x702F66</ip>
+      <obj>/lib/libpthread-2.5.so</obj>
+      <fn>pthread_create@@GLIBC_2.1</fn>
+    </frame>
+    <frame>
+      <ip>0x805A2FE</ip>
+      <obj>/home/my_project/Manager_Dev/bin/Debug/Manager</obj>
+      <fn>CThread::Start()</fn>
+      <dir>/home/my_project/Manager_Dev</dir>
+      <file>Thread.cpp</file>
+      <line>64</line>
+    </frame>
+    <frame>
+      <ip>0x805BC6C</ip>
+      <obj>/home/my_project/Manager_Dev/bin/Debug/Manager</obj>
+      <fn>CThreadPool::CThreadPool(int)</fn>
+      <dir>/home/my_project/Manager_Dev</dir>
+      <file>ThreadPool.cpp</file>
+      <line>41</line>
+    </frame>
+    <frame>
+      <ip>0x805AA18</ip>
+      <obj>/home/my_project/Manager_Dev/bin/Debug/Manager</obj>
+      <fn>CThreadManage::CThreadManage()</fn>
+      <dir>/home/my_project/Manager_Dev</dir>
+      <file>ThreadManage.cpp</file>
+      <line>6</line>
+    </frame>
+    <frame>
+      <ip>0x80548F3</ip>
+      <obj>/home/my_project/Manager_Dev/bin/Debug/Manager</obj>
+      <fn>ObjectFactoy::ObjectFactoy()</fn>
+      <dir>/home/my_project/Manager_Dev</dir>
+      <file>ObjectFactoy.cpp</file>
+      <line>50</line>
+    </frame>
+    <frame>
+      <ip>0x8054A0C</ip>
+      <obj>/home/my_project/Manager_Dev/bin/Debug/Manager</obj>
+      <fn>ObjectFactoy::GetFactoryInstance()</fn>
+      <dir>/home/my_project/Manager_Dev</dir>
+      <file>ObjectFactoy.cpp</file>
+      <line>65</line>
+    </frame>
+    <frame>
+      <ip>0x8063B8A</ip>
+      <obj>/home/my_project/Manager_Dev/bin/Debug/Manager</obj>
+      <fn>main</fn>
+      <dir>/home/my_project/Manager_Dev</dir>
+      <file>main.cpp</file>
+      <line>21</line>
+    </frame>
+  </stack>
+</error>
+
+<error>
+  <unique>0x82</unique>
+  <tid>1</tid>
+  <kind>Leak_PossiblyLost</kind>
+  <xwhat>
+    <text>576 bytes in 4 blocks are possibly lost in loss record 100 of 133</text>
+    <leakedbytes>576</leakedbytes>
+    <leakedblocks>4</leakedblocks>
+  </xwhat>
+  <stack>
+    <frame>
+      <ip>0x4004EC2</ip>
+      <obj>/usr/lib/valgrind/vgpreload_memcheck-x86-linux.so</obj>
+      <fn>calloc</fn>
+      <dir>/builddir/build/BUILD/valgrind-3.5.0/coregrind/m_replacemalloc</dir>
+      <file>vg_replace_malloc.c</file>
+      <line>418</line>
+    </frame>
+    <frame>
+      <ip>0x547EC9</ip>
+      <obj>/lib/ld-2.5.so</obj>
+      <fn>_dl_allocate_tls</fn>
+    </frame>
+    <frame>
+      <ip>0x702F66</ip>
+      <obj>/lib/libpthread-2.5.so</obj>
+      <fn>pthread_create@@GLIBC_2.1</fn>
+    </frame>
+    <frame>
+      <ip>0x805A2FE</ip>
+      <obj>/home/my_project/Manager_Dev/bin/Debug/Manager</obj>
+      <fn>CThread::Start()</fn>
+      <dir>/home/my_project/Manager_Dev</dir>
+      <file>Thread.cpp</file>
+      <line>64</line>
+    </frame>
+    <frame>
+      <ip>0x805BC6C</ip>
+      <obj>/home/my_project/Manager_Dev/bin/Debug/Manager</obj>
+      <fn>CThreadPool::CThreadPool(int)</fn>
+      <dir>/home/my_project/Manager_Dev</dir>
+      <file>ThreadPool.cpp</file>
+      <line>41</line>
+    </frame>
+    <frame>
+      <ip>0x805AA18</ip>
+      <obj>/home/my_project/Manager_Dev/bin/Debug/Manager</obj>
+      <fn>CThreadManage::CThreadManage()</fn>
+      <dir>/home/my_project/Manager_Dev</dir>
+      <file>ThreadManage.cpp</file>
+      <line>6</line>
+    </frame>
+    <frame>
+      <ip>0x8054901</ip>
+      <obj>/home/my_project/Manager_Dev/bin/Debug/Manager</obj>
+      <fn>ObjectFactoy::ObjectFactoy()</fn>
+      <dir>/home/my_project/Manager_Dev</dir>
+      <file>ObjectFactoy.cpp</file>
+      <line>50</line>
+    </frame>
+    <frame>
+      <ip>0x8054A0C</ip>
+      <obj>/home/my_project/Manager_Dev/bin/Debug/Manager</obj>
+      <fn>ObjectFactoy::GetFactoryInstance()</fn>
+      <dir>/home/my_project/Manager_Dev</dir>
+      <file>ObjectFactoy.cpp</file>
+      <line>65</line>
+    </frame>
+    <frame>
+      <ip>0x8063B8A</ip>
+      <obj>/home/my_project/Manager_Dev/bin/Debug/Manager</obj>
+      <fn>main</fn>
+      <dir>/home/my_project/Manager_Dev</dir>
+      <file>main.cpp</file>
+      <line>21</line>
+    </frame>
+  </stack>
+</error>
+
+<error>
+  <unique>0x89</unique>
+  <tid>1</tid>
+  <kind>Leak_PossiblyLost</kind>
+  <xwhat>
+    <text>1,152 bytes in 8 blocks are possibly lost in loss record 107 of 133</text>
+    <leakedbytes>1152</leakedbytes>
+    <leakedblocks>8</leakedblocks>
+  </xwhat>
+  <stack>
+    <frame>
+      <ip>0x4004EC2</ip>
+      <obj>/usr/lib/valgrind/vgpreload_memcheck-x86-linux.so</obj>
+      <fn>calloc</fn>
+      <dir>/builddir/build/BUILD/valgrind-3.5.0/coregrind/m_replacemalloc</dir>
+      <file>vg_replace_malloc.c</file>
+      <line>418</line>
+    </frame>
+    <frame>
+      <ip>0x547EC9</ip>
+      <obj>/lib/ld-2.5.so</obj>
+      <fn>_dl_allocate_tls</fn>
+    </frame>
+    <frame>
+      <ip>0x702F66</ip>
+      <obj>/lib/libpthread-2.5.so</obj>
+      <fn>pthread_create@@GLIBC_2.1</fn>
+    </frame>
+    <frame>
+      <ip>0x42EF135</ip>
+      <obj>/home/Build/lib/libACE.so.6.1.0</obj>
+      <fn>ACE_OS::thr_create(void* (*)(void*), void*, long, unsigned long*, unsigned long*, long, void*, unsigned int, ACE_Base_Thread_Adapter*, char const**)</fn>
+      <dir>/home/ACE_wrappers/ace</dir>
+      <file>OS_NS_Thread.cpp</file>
+      <line>4184</line>
+    </frame>
+    <frame>
+      <ip>0x432394B</ip>
+      <obj>/home/Build/lib/libACE.so.6.1.0</obj>
+      <fn>ACE_Thread_Manager::spawn_i(void* (*)(void*), void*, long, unsigned long*, unsigned long*, long, int, void*, unsigned int, ACE_Task_Base*, char const**)</fn>
+      <dir>/home/download/ACE_wrappers/ace</dir>
+      <file>Thread.inl</file>
+      <line>99</line>
+    </frame>
+    <frame>
+      <ip>0x432733F</ip>
+      <obj>/home/Build/lib/libACE.so.6.1.0</obj>
+      <fn>ACE_Thread_Manager::spawn_n(unsigned int, void* (*)(void*), void*, long, long, int, ACE_Task_Base*, unsigned long*, void**, unsigned int*, char const**)</fn>
+      <dir>/home/ACE_wrappers/ace</dir>
+      <file>Thread_Manager.cpp</file>
+      <line>725</line>
+    </frame>
+    <frame>
+      <ip>0x4200F6C</ip>
+      <obj>/usr/local/lib/libhtnet.so</obj>
+      <fn>HT_NetModule::init(int, int)</fn>
+      <dir>/root/workcode/ht_net/src</dir>
+      <file>HT_NetModule.cpp</file>
+      <line>58</line>
+    </frame>
+    <frame>
+      <ip>0x420917F</ip>
+      <obj>/usr/local/lib/libhtnet.so</obj>
+      <fn>HT_NET_Engine_init</fn>
+      <dir>/root/workcode/ht_net/src</dir>
+      <file>HT_NET_Engine.cpp</file>
+      <line>11</line>
+    </frame>
+    <frame>
+      <ip>0x804BF21</ip>
+      <obj>/home/my_project/Manager_Dev/bin/Debug/Manager</obj>
+      <fn>NetInit()</fn>
+      <dir>/home/my_project/Manager_Dev</dir>
+      <file>GlobalFunc.cpp</file>
+      <line>25</line>
+    </frame>
+    <frame>
+      <ip>0x8063E2C</ip>
+      <obj>/home/my_project/Manager_Dev/bin/Debug/Manager</obj>
+      <fn>main</fn>
+      <dir>/home/my_project/Manager_Dev</dir>
+      <file>main.cpp</file>
+      <line>58</line>
+    </frame>
+  </stack>
+</error>
+
+<error>
+  <unique>0x8c</unique>
+  <tid>1</tid>
+  <kind>Leak_PossiblyLost</kind>
+  <xwhat>
+    <text>4,088 bytes in 1 blocks are possibly lost in loss record 110 of 133</text>
+    <leakedbytes>4088</leakedbytes>
+    <leakedblocks>1</leakedblocks>
+  </xwhat>
+  <stack>
+    <frame>
+      <ip>0x4005B83</ip>
+      <obj>/usr/lib/valgrind/vgpreload_memcheck-x86-linux.so</obj>
+      <fn>malloc</fn>
+      <dir>/builddir/build/BUILD/valgrind-3.5.0/coregrind/m_replacemalloc</dir>
+      <file>vg_replace_malloc.c</file>
+      <line>195</line>
+    </frame>
+    <frame>
+      <ip>0x4064534</ip>
+      <obj>/usr/lib/libmysqlclient.so.16.0.0</obj>
+      <fn>my_once_alloc</fn>
+    </frame>
+    <frame>
+      <ip>0x406460B</ip>
+      <obj>/usr/lib/libmysqlclient.so.16.0.0</obj>
+      <fn>my_once_strdup</fn>
+    </frame>
+    <frame>
+      <ip>0x4064EDE</ip>
+      <obj>/usr/lib/libmysqlclient.so.16.0.0</obj>
+    </frame>
+    <frame>
+      <ip>0x406F081</ip>
+      <obj>/usr/lib/libmysqlclient.so.16.0.0</obj>
+    </frame>
+    <frame>
+      <ip>0x407EFF0</ip>
+      <obj>/usr/lib/libmysqlclient.so.16.0.0</obj>
+    </frame>
+    <frame>
+      <ip>0x407F3B6</ip>
+      <obj>/usr/lib/libmysqlclient.so.16.0.0</obj>
+      <fn>my_xml_parse</fn>
+    </frame>
+    <frame>
+      <ip>0x406F539</ip>
+      <obj>/usr/lib/libmysqlclient.so.16.0.0</obj>
+      <fn>my_parse_charset_xml</fn>
+    </frame>
+    <frame>
+      <ip>0x4065178</ip>
+      <obj>/usr/lib/libmysqlclient.so.16.0.0</obj>
+    </frame>
+    <frame>
+      <ip>0x4065373</ip>
+      <obj>/usr/lib/libmysqlclient.so.16.0.0</obj>
+    </frame>
+    <frame>
+      <ip>0x4065789</ip>
+      <obj>/usr/lib/libmysqlclient.so.16.0.0</obj>
+      <fn>get_charset_by_csname</fn>
+    </frame>
+    <frame>
+      <ip>0x4080C52</ip>
+      <obj>/usr/lib/libmysqlclient.so.16.0.0</obj>
+      <fn>mysql_init_character_set</fn>
+    </frame>
+  </stack>
+</error>
+
+<error>
+  <unique>0x8d</unique>
+  <tid>1</tid>
+  <kind>Leak_PossiblyLost</kind>
+  <xwhat>
+    <text>4,088 bytes in 1 blocks are possibly lost in loss record 111 of 133</text>
+    <leakedbytes>4088</leakedbytes>
+    <leakedblocks>1</leakedblocks>
+  </xwhat>
+  <stack>
+    <frame>
+      <ip>0x4005B83</ip>
+      <obj>/usr/lib/valgrind/vgpreload_memcheck-x86-linux.so</obj>
+      <fn>malloc</fn>
+      <dir>/builddir/build/BUILD/valgrind-3.5.0/coregrind/m_replacemalloc</dir>
+      <file>vg_replace_malloc.c</file>
+      <line>195</line>
+    </frame>
+    <frame>
+      <ip>0x4064534</ip>
+      <obj>/usr/lib/libmysqlclient.so.16.0.0</obj>
+      <fn>my_once_alloc</fn>
+    </frame>
+    <frame>
+      <ip>0x4064DFD</ip>
+      <obj>/usr/lib/libmysqlclient.so.16.0.0</obj>
+    </frame>
+    <frame>
+      <ip>0x406F081</ip>
+      <obj>/usr/lib/libmysqlclient.so.16.0.0</obj>
+    </frame>
+    <frame>
+      <ip>0x407EFF0</ip>
+      <obj>/usr/lib/libmysqlclient.so.16.0.0</obj>
+    </frame>
+    <frame>
+      <ip>0x407F3B6</ip>
+      <obj>/usr/lib/libmysqlclient.so.16.0.0</obj>
+      <fn>my_xml_parse</fn>
+    </frame>
+    <frame>
+      <ip>0x406F539</ip>
+      <obj>/usr/lib/libmysqlclient.so.16.0.0</obj>
+      <fn>my_parse_charset_xml</fn>
+    </frame>
+    <frame>
+      <ip>0x4065178</ip>
+      <obj>/usr/lib/libmysqlclient.so.16.0.0</obj>
+    </frame>
+    <frame>
+      <ip>0x4065373</ip>
+      <obj>/usr/lib/libmysqlclient.so.16.0.0</obj>
+    </frame>
+    <frame>
+      <ip>0x4065789</ip>
+      <obj>/usr/lib/libmysqlclient.so.16.0.0</obj>
+      <fn>get_charset_by_csname</fn>
+    </frame>
+    <frame>
+      <ip>0x4080C52</ip>
+      <obj>/usr/lib/libmysqlclient.so.16.0.0</obj>
+      <fn>mysql_init_character_set</fn>
+    </frame>
+    <frame>
+      <ip>0x40824BD</ip>
+      <obj>/usr/lib/libmysqlclient.so.16.0.0</obj>
+      <fn>mysql_real_connect</fn>
+    </frame>
+  </stack>
+</error>
+
+<error>
+  <unique>0x91</unique>
+  <tid>1</tid>
+  <kind>Leak_PossiblyLost</kind>
+  <xwhat>
+    <text>8,164 bytes in 1 blocks are possibly lost in loss record 115 of 133</text>
+    <leakedbytes>8164</leakedbytes>
+    <leakedblocks>1</leakedblocks>
+  </xwhat>
+  <stack>
+    <frame>
+      <ip>0x4005B83</ip>
+      <obj>/usr/lib/valgrind/vgpreload_memcheck-x86-linux.so</obj>
+      <fn>malloc</fn>
+      <dir>/builddir/build/BUILD/valgrind-3.5.0/coregrind/m_replacemalloc</dir>
+      <file>vg_replace_malloc.c</file>
+      <line>195</line>
+    </frame>
+    <frame>
+      <ip>0x405D0E6</ip>
+      <obj>/usr/lib/libmysqlclient.so.16.0.0</obj>
+      <fn>my_malloc</fn>
+    </frame>
+    <frame>
+      <ip>0x4060432</ip>
+      <obj>/usr/lib/libmysqlclient.so.16.0.0</obj>
+      <fn>alloc_root</fn>
+    </frame>
+    <frame>
+      <ip>0x4081652</ip>
+      <obj>/usr/lib/libmysqlclient.so.16.0.0</obj>
+      <fn>cli_read_rows</fn>
+    </frame>
+    <frame>
+      <ip>0x4083192</ip>
+      <obj>/usr/lib/libmysqlclient.so.16.0.0</obj>
+      <fn>mysql_store_result</fn>
+    </frame>
+    <frame>
+      <ip>0x804E39F</ip>
+      <obj>/home/my_project/Manager_Dev/bin/Debug/Manager</obj>
+      <fn>MEM_DATA::Get_Device_Block()</fn>
+      <dir>/home/my_project/Manager_Dev</dir>
+      <file>Mem_Data.cpp</file>
+      <line>29</line>
+    </frame>
+    <frame>
+      <ip>0x8063E14</ip>
+      <obj>/home/my_project/Manager_Dev/bin/Debug/Manager</obj>
+      <fn>main</fn>
+      <dir>/home/my_project/Manager_Dev</dir>
+      <file>main.cpp</file>
+      <line>55</line>
+    </frame>
+  </stack>
+</error>
+
+<error>
+  <unique>0x92</unique>
+  <tid>1</tid>
+  <kind>Leak_PossiblyLost</kind>
+  <xwhat>
+    <text>8,164 bytes in 1 blocks are possibly lost in loss record 116 of 133</text>
+    <leakedbytes>8164</leakedbytes>
+    <leakedblocks>1</leakedblocks>
+  </xwhat>
+  <stack>
+    <frame>
+      <ip>0x4005B83</ip>
+      <obj>/usr/lib/valgrind/vgpreload_memcheck-x86-linux.so</obj>
+      <fn>malloc</fn>
+      <dir>/builddir/build/BUILD/valgrind-3.5.0/coregrind/m_replacemalloc</dir>
+      <file>vg_replace_malloc.c</file>
+      <line>195</line>
+    </frame>
+    <frame>
+      <ip>0x405D0E6</ip>
+      <obj>/usr/lib/libmysqlclient.so.16.0.0</obj>
+      <fn>my_malloc</fn>
+    </frame>
+    <frame>
+      <ip>0x4060432</ip>
+      <obj>/usr/lib/libmysqlclient.so.16.0.0</obj>
+      <fn>alloc_root</fn>
+    </frame>
+    <frame>
+      <ip>0x4081652</ip>
+      <obj>/usr/lib/libmysqlclient.so.16.0.0</obj>
+      <fn>cli_read_rows</fn>
+    </frame>
+    <frame>
+      <ip>0x4083192</ip>
+      <obj>/usr/lib/libmysqlclient.so.16.0.0</obj>
+      <fn>mysql_store_result</fn>
+    </frame>
+    <frame>
+      <ip>0x804D9C8</ip>
+      <obj>/home/my_project/Manager_Dev/bin/Debug/Manager</obj>
+      <fn>MEM_DATA::Get_DeviceGroup_Block()</fn>
+      <dir>/home/my_project/Manager_Dev</dir>
+      <file>Mem_Data.cpp</file>
+      <line>106</line>
+    </frame>
+    <frame>
+      <ip>0x804E667</ip>
+      <obj>/home/my_project/Manager_Dev/bin/Debug/Manager</obj>
+      <fn>MEM_DATA::Get_Device_Block()</fn>
+      <dir>/home/my_project/Manager_Dev</dir>
+      <file>Mem_Data.cpp</file>
+      <line>47</line>
+    </frame>
+    <frame>
+      <ip>0x8063E14</ip>
+      <obj>/home/my_project/Manager_Dev/bin/Debug/Manager</obj>
+      <fn>main</fn>
+      <dir>/home/my_project/Manager_Dev</dir>
+      <file>main.cpp</file>
+      <line>55</line>
+    </frame>
+  </stack>
+</error>
+
+<error>
+  <unique>0x93</unique>
+  <tid>1</tid>
+  <kind>Leak_PossiblyLost</kind>
+  <xwhat>
+    <text>8,164 bytes in 1 blocks are possibly lost in loss record 117 of 133</text>
+    <leakedbytes>8164</leakedbytes>
+    <leakedblocks>1</leakedblocks>
+  </xwhat>
+  <stack>
+    <frame>
+      <ip>0x4005B83</ip>
+      <obj>/usr/lib/valgrind/vgpreload_memcheck-x86-linux.so</obj>
+      <fn>malloc</fn>
+      <dir>/builddir/build/BUILD/valgrind-3.5.0/coregrind/m_replacemalloc</dir>
+      <file>vg_replace_malloc.c</file>
+      <line>195</line>
+    </frame>
+    <frame>
+      <ip>0x405D0E6</ip>
+      <obj>/usr/lib/libmysqlclient.so.16.0.0</obj>
+      <fn>my_malloc</fn>
+    </frame>
+    <frame>
+      <ip>0x4060432</ip>
+      <obj>/usr/lib/libmysqlclient.so.16.0.0</obj>
+      <fn>alloc_root</fn>
+    </frame>
+    <frame>
+      <ip>0x4081652</ip>
+      <obj>/usr/lib/libmysqlclient.so.16.0.0</obj>
+      <fn>cli_read_rows</fn>
+    </frame>
+    <frame>
+      <ip>0x4083192</ip>
+      <obj>/usr/lib/libmysqlclient.so.16.0.0</obj>
+      <fn>mysql_store_result</fn>
+    </frame>
+    <frame>
+      <ip>0x804DC32</ip>
+      <obj>/home/my_project/Manager_Dev/bin/Debug/Manager</obj>
+      <fn>MEM_DATA::Get_DeviceInfo_Block()</fn>
+      <dir>/home/my_project/Manager_Dev</dir>
+      <file>Mem_Data.cpp</file>
+      <line>56</line>
+    </frame>
+    <frame>
+      <ip>0x804E672</ip>
+      <obj>/home/my_project/Manager_Dev/bin/Debug/Manager</obj>
+      <fn>MEM_DATA::Get_Device_Block()</fn>
+      <dir>/home/my_project/Manager_Dev</dir>
+      <file>Mem_Data.cpp</file>
+      <line>48</line>
+    </frame>
+    <frame>
+      <ip>0x8063E14</ip>
+      <obj>/home/my_project/Manager_Dev/bin/Debug/Manager</obj>
+      <fn>main</fn>
+      <dir>/home/my_project/Manager_Dev</dir>
+      <file>main.cpp</file>
+      <line>55</line>
+    </frame>
+  </stack>
+</error>
+
+<error>
+  <unique>0x9a</unique>
+  <tid>1</tid>
+  <kind>Leak_DefinitelyLost</kind>
+  <xwhat>
+    <text>8,324 (104 direct, 8,220 indirect) bytes in 1 blocks are definitely lost in loss record 124 of 133</text>
+    <leakedbytes>8324</leakedbytes>
+    <leakedblocks>1</leakedblocks>
+  </xwhat>
+  <stack>
+    <frame>
+      <ip>0x4005B83</ip>
+      <obj>/usr/lib/valgrind/vgpreload_memcheck-x86-linux.so</obj>
+      <fn>malloc</fn>
+      <dir>/builddir/build/BUILD/valgrind-3.5.0/coregrind/m_replacemalloc</dir>
+      <file>vg_replace_malloc.c</file>
+      <line>195</line>
+    </frame>
+    <frame>
+      <ip>0x405D0E6</ip>
+      <obj>/usr/lib/libmysqlclient.so.16.0.0</obj>
+      <fn>my_malloc</fn>
+    </frame>
+    <frame>
+      <ip>0x4083155</ip>
+      <obj>/usr/lib/libmysqlclient.so.16.0.0</obj>
+      <fn>mysql_store_result</fn>
+    </frame>
+    <frame>
+      <ip>0x804E39F</ip>
+      <obj>/home/my_project/Manager_Dev/bin/Debug/Manager</obj>
+      <fn>MEM_DATA::Get_Device_Block()</fn>
+      <dir>/home/my_project/Manager_Dev</dir>
+      <file>Mem_Data.cpp</file>
+      <line>29</line>
+    </frame>
+    <frame>
+      <ip>0x8063E14</ip>
+      <obj>/home/my_project/Manager_Dev/bin/Debug/Manager</obj>
+      <fn>main</fn>
+      <dir>/home/my_project/Manager_Dev</dir>
+      <file>main.cpp</file>
+      <line>55</line>
+    </frame>
+  </stack>
+</error>
+
+<error>
+  <unique>0x9b</unique>
+  <tid>1</tid>
+  <kind>Leak_DefinitelyLost</kind>
+  <xwhat>
+    <text>8,324 (104 direct, 8,220 indirect) bytes in 1 blocks are definitely lost in loss record 125 of 133</text>
+    <leakedbytes>8324</leakedbytes>
+    <leakedblocks>1</leakedblocks>
+  </xwhat>
+  <stack>
+    <frame>
+      <ip>0x4005B83</ip>
+      <obj>/usr/lib/valgrind/vgpreload_memcheck-x86-linux.so</obj>
+      <fn>malloc</fn>
+      <dir>/builddir/build/BUILD/valgrind-3.5.0/coregrind/m_replacemalloc</dir>
+      <file>vg_replace_malloc.c</file>
+      <line>195</line>
+    </frame>
+    <frame>
+      <ip>0x405D0E6</ip>
+      <obj>/usr/lib/libmysqlclient.so.16.0.0</obj>
+      <fn>my_malloc</fn>
+    </frame>
+    <frame>
+      <ip>0x4083155</ip>
+      <obj>/usr/lib/libmysqlclient.so.16.0.0</obj>
+      <fn>mysql_store_result</fn>
+    </frame>
+    <frame>
+      <ip>0x804D9C8</ip>
+      <obj>/home/my_project/Manager_Dev/bin/Debug/Manager</obj>
+      <fn>MEM_DATA::Get_DeviceGroup_Block()</fn>
+      <dir>/home/my_project/Manager_Dev</dir>
+      <file>Mem_Data.cpp</file>
+      <line>106</line>
+    </frame>
+    <frame>
+      <ip>0x804E667</ip>
+      <obj>/home/my_project/Manager_Dev/bin/Debug/Manager</obj>
+      <fn>MEM_DATA::Get_Device_Block()</fn>
+      <dir>/home/my_project/Manager_Dev</dir>
+      <file>Mem_Data.cpp</file>
+      <line>47</line>
+    </frame>
+    <frame>
+      <ip>0x8063E14</ip>
+      <obj>/home/my_project/Manager_Dev/bin/Debug/Manager</obj>
+      <fn>main</fn>
+      <dir>/home/my_project/Manager_Dev</dir>
+      <file>main.cpp</file>
+      <line>55</line>
+    </frame>
+  </stack>
+</error>
+
+<error>
+  <unique>0x9c</unique>
+  <tid>1</tid>
+  <kind>Leak_DefinitelyLost</kind>
+  <xwhat>
+    <text>8,368 (148 direct, 8,220 indirect) bytes in 1 blocks are definitely lost in loss record 126 of 133</text>
+    <leakedbytes>8368</leakedbytes>
+    <leakedblocks>1</leakedblocks>
+  </xwhat>
+  <stack>
+    <frame>
+      <ip>0x4005B83</ip>
+      <obj>/usr/lib/valgrind/vgpreload_memcheck-x86-linux.so</obj>
+      <fn>malloc</fn>
+      <dir>/builddir/build/BUILD/valgrind-3.5.0/coregrind/m_replacemalloc</dir>
+      <file>vg_replace_malloc.c</file>
+      <line>195</line>
+    </frame>
+    <frame>
+      <ip>0x405D0E6</ip>
+      <obj>/usr/lib/libmysqlclient.so.16.0.0</obj>
+      <fn>my_malloc</fn>
+    </frame>
+    <frame>
+      <ip>0x4083155</ip>
+      <obj>/usr/lib/libmysqlclient.so.16.0.0</obj>
+      <fn>mysql_store_result</fn>
+    </frame>
+    <frame>
+      <ip>0x804DC32</ip>
+      <obj>/home/my_project/Manager_Dev/bin/Debug/Manager</obj>
+      <fn>MEM_DATA::Get_DeviceInfo_Block()</fn>
+      <dir>/home/my_project/Manager_Dev</dir>
+      <file>Mem_Data.cpp</file>
+      <line>56</line>
+    </frame>
+    <frame>
+      <ip>0x804E672</ip>
+      <obj>/home/my_project/Manager_Dev/bin/Debug/Manager</obj>
+      <fn>MEM_DATA::Get_Device_Block()</fn>
+      <dir>/home/my_project/Manager_Dev</dir>
+      <file>Mem_Data.cpp</file>
+      <line>48</line>
+    </frame>
+    <frame>
+      <ip>0x8063E14</ip>
+      <obj>/home/my_project/Manager_Dev/bin/Debug/Manager</obj>
+      <fn>main</fn>
+      <dir>/home/my_project/Manager_Dev</dir>
+      <file>main.cpp</file>
+      <line>55</line>
+    </frame>
+  </stack>
+</error>
+
+<error>
+  <unique>0x9e</unique>
+  <tid>1</tid>
+  <kind>Leak_PossiblyLost</kind>
+  <xwhat>
+    <text>12,264 bytes in 3 blocks are possibly lost in loss record 128 of 133</text>
+    <leakedbytes>12264</leakedbytes>
+    <leakedblocks>3</leakedblocks>
+  </xwhat>
+  <stack>
+    <frame>
+      <ip>0x4005B83</ip>
+      <obj>/usr/lib/valgrind/vgpreload_memcheck-x86-linux.so</obj>
+      <fn>malloc</fn>
+      <dir>/builddir/build/BUILD/valgrind-3.5.0/coregrind/m_replacemalloc</dir>
+      <file>vg_replace_malloc.c</file>
+      <line>195</line>
+    </frame>
+    <frame>
+      <ip>0x4064534</ip>
+      <obj>/usr/lib/libmysqlclient.so.16.0.0</obj>
+      <fn>my_once_alloc</fn>
+    </frame>
+    <frame>
+      <ip>0x40649BA</ip>
+      <obj>/usr/lib/libmysqlclient.so.16.0.0</obj>
+    </frame>
+    <frame>
+      <ip>0x4065338</ip>
+      <obj>/usr/lib/libmysqlclient.so.16.0.0</obj>
+    </frame>
+    <frame>
+      <ip>0x4065789</ip>
+      <obj>/usr/lib/libmysqlclient.so.16.0.0</obj>
+      <fn>get_charset_by_csname</fn>
+    </frame>
+    <frame>
+      <ip>0x4080C52</ip>
+      <obj>/usr/lib/libmysqlclient.so.16.0.0</obj>
+      <fn>mysql_init_character_set</fn>
+    </frame>
+    <frame>
+      <ip>0x40824BD</ip>
+      <obj>/usr/lib/libmysqlclient.so.16.0.0</obj>
+      <fn>mysql_real_connect</fn>
+    </frame>
+    <frame>
+      <ip>0x8063DE9</ip>
+      <obj>/home/my_project/Manager_Dev/bin/Debug/Manager</obj>
+      <fn>main</fn>
+      <dir>/home/my_project/Manager_Dev</dir>
+      <file>main.cpp</file>
+      <line>52</line>
+    </frame>
+  </stack>
+</error>
+
+<error>
+  <unique>0x9f</unique>
+  <tid>1</tid>
+  <kind>Leak_PossiblyLost</kind>
+  <xwhat>
+    <text>16,352 bytes in 4 blocks are possibly lost in loss record 129 of 133</text>
+    <leakedbytes>16352</leakedbytes>
+    <leakedblocks>4</leakedblocks>
+  </xwhat>
+  <stack>
+    <frame>
+      <ip>0x4005B83</ip>
+      <obj>/usr/lib/valgrind/vgpreload_memcheck-x86-linux.so</obj>
+      <fn>malloc</fn>
+      <dir>/builddir/build/BUILD/valgrind-3.5.0/coregrind/m_replacemalloc</dir>
+      <file>vg_replace_malloc.c</file>
+      <line>195</line>
+    </frame>
+    <frame>
+      <ip>0x4064534</ip>
+      <obj>/usr/lib/libmysqlclient.so.16.0.0</obj>
+      <fn>my_once_alloc</fn>
+    </frame>
+    <frame>
+      <ip>0x406498D</ip>
+      <obj>/usr/lib/libmysqlclient.so.16.0.0</obj>
+    </frame>
+    <frame>
+      <ip>0x4065338</ip>
+      <obj>/usr/lib/libmysqlclient.so.16.0.0</obj>
+    </frame>
+    <frame>
+      <ip>0x4065789</ip>
+      <obj>/usr/lib/libmysqlclient.so.16.0.0</obj>
+      <fn>get_charset_by_csname</fn>
+    </frame>
+    <frame>
+      <ip>0x4080C52</ip>
+      <obj>/usr/lib/libmysqlclient.so.16.0.0</obj>
+      <fn>mysql_init_character_set</fn>
+    </frame>
+    <frame>
+      <ip>0x40824BD</ip>
+      <obj>/usr/lib/libmysqlclient.so.16.0.0</obj>
+      <fn>mysql_real_connect</fn>
+    </frame>
+    <frame>
+      <ip>0x8063DE9</ip>
+      <obj>/home/my_project/Manager_Dev/bin/Debug/Manager</obj>
+      <fn>main</fn>
+      <dir>/home/my_project/Manager_Dev</dir>
+      <file>main.cpp</file>
+      <line>52</line>
+    </frame>
+  </stack>
+</error>
+
+<error>
+  <unique>0xa1</unique>
+  <tid>1</tid>
+  <kind>Leak_PossiblyLost</kind>
+  <xwhat>
+    <text>16,388 bytes in 1 blocks are possibly lost in loss record 131 of 133</text>
+    <leakedbytes>16388</leakedbytes>
+    <leakedblocks>1</leakedblocks>
+  </xwhat>
+  <stack>
+    <frame>
+      <ip>0x4005976</ip>
+      <obj>/usr/lib/valgrind/vgpreload_memcheck-x86-linux.so</obj>
+      <fn>operator new[](unsigned int, std::nothrow_t const&amp;)</fn>
+      <dir>/builddir/build/BUILD/valgrind-3.5.0/coregrind/m_replacemalloc</dir>
+      <file>vg_replace_malloc.c</file>
+      <line>278</line>
+    </frame>
+    <frame>
+      <ip>0x42E9F89</ip>
+      <obj>/home/Build/lib/libACE.so.6.1.0</obj>
+      <fn>ACE_Notification_Queue::allocate_more_buffers()</fn>
+      <dir>/home/ACE_wrappers/ace</dir>
+      <file>Notification_Queue.cpp</file>
+      <line>83</line>
+    </frame>
+    <frame>
+      <ip>0x42EA25C</ip>
+      <obj>/home/Build/lib/libACE.so.6.1.0</obj>
+      <fn>ACE_Notification_Queue::open()</fn>
+      <dir>/home/ACE_wrappers/ace</dir>
+      <file>Notification_Queue.cpp</file>
+      <line>38</line>
+    </frame>
+    <frame>
+      <ip>0x42C431A</ip>
+      <obj>/home/Build/lib/libACE.so.6.1.0</obj>
+      <fn>ACE_Dev_Poll_Reactor_Notify::open(ACE_Reactor_Impl*, ACE_Abstract_Timer_Queue&lt;ACE_Event_Handler*&gt;*, int)</fn>
+      <dir>/home/ACE_wrappers/ace</dir>
+      <file>Dev_Poll_Reactor.cpp</file>
+      <line>83</line>
+    </frame>
+    <frame>
+      <ip>0x42C76EC</ip>
+      <obj>/home/Build/lib/libACE.so.6.1.0</obj>
+      <fn>ACE_Dev_Poll_Reactor::open(unsigned int, bool, ACE_Sig_Handler*, ACE_Abstract_Timer_Queue&lt;ACE_Event_Handler*&gt;*, int, ACE_Reactor_Notify*)</fn>
+      <dir>/home/ACE_wrappers/ace</dir>
+      <file>Dev_Poll_Reactor.cpp</file>
+      <line>761</line>
+    </frame>
+    <frame>
+      <ip>0x42C7A02</ip>
+      <obj>/home/Build/lib/libACE.so.6.1.0</obj>
+      <fn>ACE_Dev_Poll_Reactor::ACE_Dev_Poll_Reactor(unsigned int, bool, ACE_Sig_Handler*, ACE_Abstract_Timer_Queue&lt;ACE_Event_Handler*&gt;*, int, ACE_Reactor_Notify*, int, int)</fn>
+      <dir>/home/ACE_wrappers/ace</dir>
+      <file>Dev_Poll_Reactor.cpp</file>
+      <line>648</line>
+    </frame>
+    <frame>
+      <ip>0x4200E88</ip>
+      <obj>/usr/local/lib/libhtnet.so</obj>
+      <fn>HT_NetModule::init(int, int)</fn>
+      <dir>/root/workcode/ht_net/src</dir>
+      <file>HT_NetModule.cpp</file>
+      <line>53</line>
+    </frame>
+    <frame>
+      <ip>0x420917F</ip>
+      <obj>/usr/local/lib/libhtnet.so</obj>
+      <fn>HT_NET_Engine_init</fn>
+      <dir>/root/workcode/ht_net/src</dir>
+      <file>HT_NET_Engine.cpp</file>
+      <line>11</line>
+    </frame>
+    <frame>
+      <ip>0x804BF21</ip>
+      <obj>/home/my_project/Manager_Dev/bin/Debug/Manager</obj>
+      <fn>NetInit()</fn>
+      <dir>/home/my_project/Manager_Dev</dir>
+      <file>GlobalFunc.cpp</file>
+      <line>25</line>
+    </frame>
+    <frame>
+      <ip>0x8063E2C</ip>
+      <obj>/home/my_project/Manager_Dev/bin/Debug/Manager</obj>
+      <fn>main</fn>
+      <dir>/home/my_project/Manager_Dev</dir>
+      <file>main.cpp</file>
+      <line>58</line>
+    </frame>
+  </stack>
+</error>
+
+<errorcounts>
+  <pair>
+    <count>1</count>
+    <unique>0x1e</unique>
+  </pair>
+</errorcounts>
+
+<suppcounts>
+  <pair>
+    <count>30</count>
+    <name>dl-hack3</name>
+  </pair>
+</suppcounts>
+
+</valgrindoutput>
+

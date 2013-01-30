@@ -1,0 +1,5 @@
+<iq type='set'>
+  <query xmlns='posacar:signaling:heartbeat'>
+    <time>20090627000000</time>
+  </query>
+</iq>

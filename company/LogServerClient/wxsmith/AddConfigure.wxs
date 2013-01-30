@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<wxsmith>
+	<object class="wxDialog" name="AddConfigure">
+		<id_arg>0</id_arg>
+		<object class="wxBoxSizer" variable="BoxSizer1" member="no">
+			<orient>wxVERTICAL</orient>
+			<object class="sizeritem">
+				<object class="wxStaticText" name="ID_STATICTEXT1" variable="StaticText1" member="yes">
+					<label>回车换行输入多行可以一次性插入多条数据</label>
+				</object>
+				<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+				<border>5</border>
+			</object>
+			<object class="sizeritem">
+				<object class="wxTextCtrl" name="ID_TEXTCTRL1" variable="TextCtrl_Items" member="yes">
+					<size>205,193</size>
+					<style>wxTE_MULTILINE</style>
+				</object>
+				<flag>wxALL|wxEXPAND|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+				<border>5</border>
+				<option>1</option>
+			</object>
+			<object class="sizeritem">
+				<object class="wxBoxSizer" variable="BoxSizer2" member="no">
+					<object class="sizeritem">
+						<object class="wxButton" name="ID_BUTTON2" variable="Button_Sure" member="yes">
+							<label>确认</label>
+							<handler function="OnButton_SureClick" entry="EVT_BUTTON" />
+						</object>
+						<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+						<border>5</border>
+					</object>
+					<object class="sizeritem">
+						<object class="wxButton" name="ID_BUTTON1" variable="Button_Cancel" member="yes">
+							<label>取消</label>
+						</object>
+						<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+						<border>5</border>
+					</object>
+				</object>
+				<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+				<border>5</border>
+			</object>
+		</object>
+	</object>
+</wxsmith>
