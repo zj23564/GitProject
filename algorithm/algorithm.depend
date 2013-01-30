@@ -1,0 +1,12 @@
+# depslib dependency file v1.0
+1359527352 source:g:\upordownload\my_function\algorithm\algorithm\main.cpp
+	<iostream>
+	"include/MStack.h"
+	<stdio.h>
+
+1359527331 g:\upordownload\my_function\algorithm\algorithm\include\mstack.h
+
+1359526056 source:g:\upordownload\my_function\algorithm\algorithm\src\mstack.cpp
+	"../include/MStack.h"
+	<stdio.h>
+

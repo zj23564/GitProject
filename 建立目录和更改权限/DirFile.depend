@@ -1,0 +1,20 @@
+# depslib dependency file v1.0
+1358908274 source:/home/my_project/DirFile/main.cpp
+	<iostream>
+	"lcdir.h"
+
+1358909350 /home/my_project/DirFile/lcdir.h
+	<string>
+	<vector>
+
+1358908264 source:/home/my_project/DirFile/lcdir.cpp
+	"lcdir.h"
+	<unistd.h>
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<dirent.h>
+	<limits.h>
+	<sys/stat.h>
+	<errno.h>
+

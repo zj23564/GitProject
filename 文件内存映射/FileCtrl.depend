@@ -1,0 +1,19 @@
+# depslib dependency file v1.0
+1359100522 source:/home/my_project/FileCtrl/main.cpp
+	<iostream>
+	"lcfile.h"
+
+1359103101 /home/my_project/FileCtrl/lcfile.h
+	<stdio.h>
+	<stdlib.h>
+	<errno.h>
+	<string.h>
+	<sys/types.h>
+	<sys/stat.h>
+	<sys/mman.h>
+	<fcntl.h>
+	<unistd.h>
+
+1359099137 source:/home/my_project/FileCtrl/lcfile.cpp
+	"lcfile.h"
+
